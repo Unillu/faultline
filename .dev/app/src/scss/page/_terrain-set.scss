@@ -1,0 +1,186 @@
+.terrain-set {
+	background: linear-gradient(to bottom, rgba(palette(dark),1) 0%, rgba(palette(dark),0) 20%);
+	overflow: hidden;
+
+	.hero-container {
+		padding: $gutter*10 0 $gutter*5;
+		width: 1200px;
+		height: 487px;
+		background-size: 1200px 487px;
+
+		@extend %background-image;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.hero-headline {
+		flex: 1;
+	}
+
+	.terrain-title {
+		@include font(sans-serif);
+
+		color: palette(secondary);
+		text-transform: none;
+		font-size: 36px;
+		line-height: 42px;
+		font-weight: 600;
+		margin: $gutter*5 0;
+	}
+
+	.terrain-specs {
+		background: $white;
+		padding: 0 8.333333% $gutter*5;
+		border-radius: 5px 5px 0 0;
+		margin-bottom: -$gutter*5;
+
+		.location {
+			text-align: center;
+		}
+
+		.terrain-mat-description {
+			@include font(headline);
+
+			letter-spacing: 1px;
+			line-height: 20px;
+			margin-top: 20px;
+			font-size: 24px;
+		}
+
+		.terrain-name {
+			font-weight: 800;
+		}
+
+		.terrain-rules-item {
+			overflow: auto;
+			margin-bottom: $gutter*5;
+			display: flex;
+
+			@include breakpoint-max(md) {
+				flex-direction: column;
+			}
+		}
+
+		.terrain-rules-image {
+			max-width: 300px;
+			max-height: 300px;
+			margin: 0 auto $gutter*3;
+			flex: 1;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.terrain-rules-description {
+			flex: 1;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+
+			@include breakpoint-min(md) {
+				margin-left: $gutter*5;
+			}
+
+			.terrain-name {
+				font-size: 24px;
+				letter-spacing: 1px;
+				line-height: 20px;
+			}
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		li {
+			margin-bottom: $gutter*2;
+		}
+
+		p, li, figcaption {
+			color: palette(primary);
+		}
+	}
+
+	.terrain-mat {
+		img {
+			width: 100%;
+		}
+	}
+
+	.flavor-intro {
+		position: relative;
+
+		&:after {
+			content: $icon-logo;
+			position: absolute;
+			font-size: 50em;
+			color: rgba($white,.05);
+			font-family: icomoon;
+			top: 25%;
+			z-index: 0;
+			left: -0.4em;
+		}
+	}
+
+	.flavor-gallery {
+
+		.carousel {
+			box-shadow: 0 3px 5px rgba(palette(dark), .5);
+			border-radius: 5px;
+			margin-bottom: $gutter*5;
+		}
+
+		.carousel-item {
+
+			img {
+				border-radius: 5px;
+				width: 100%;
+			}
+		}
+
+		.carousel-indicators {
+			bottom: -40px;
+
+			li {
+				height: 2px;
+				width: 80px;
+				background: rgba(palette(secondary), .2);
+				transition: background .5s;
+
+				&.active {
+					background: palette(secondary);
+				}
+			}
+		}
+	}
+
+	.img-tile {
+		display: none;
+		border-radius: 5px;
+		width: 244px;
+		height: 244px;
+		transform: rotate(-45deg);
+		overflow: hidden;
+		box-shadow: -3px 3px 5px rgba(palette(dark), .5);
+		position: absolute;
+		left: 84%;
+		top: 80px;
+
+		@include breakpoint-min(md) {
+			display: block;
+
+			img {
+				transform: rotate(45deg);
+				position: absolute;
+				left: 50%;
+				width: 500px;
+				margin-left: -250px;
+				top: -50px;
+			}
+		}
+	}
+
+}

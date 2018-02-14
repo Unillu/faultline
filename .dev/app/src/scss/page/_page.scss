@@ -1,0 +1,12 @@
+.page {
+	color: palette(primary);
+
+	.hero-container {
+		padding: $gutter*15 0 $gutter*5;
+		color: $white;
+	}
+
+	.page-template-default {
+		background: palette(primary);
+	}
+}

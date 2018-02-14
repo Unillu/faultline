@@ -1,0 +1,82 @@
+.membership {
+
+	.container {
+		padding-bottom: 0;
+	}
+
+	.hero-headline {
+		h2 {
+			@include font(sans-serif);
+			text-transform: none;
+			margin-bottom: $gutter*10;
+		}
+	}
+
+	.membership-row {
+		margin-bottom: $gutter*5;
+	}
+
+	.membership-callout {
+		padding-right: $gutter*2;
+		text-transform: none;
+		@include font(sans-serif);
+	}
+
+	.membership-description {
+
+	}
+
+	.membership-check {
+		@extend %background-image;
+		@include img-membership-check;
+		height: auto;
+		background-size: cover;
+
+		padding: $gutter*10 0;
+		color: $white;
+
+		.content {
+			padding-bottom: $gutter*5;
+		}
+
+		.item {
+			padding-right: $gutter*2;
+			margin-bottom: $gutter*2;
+		}
+
+		.step {
+			@include font(headline);
+			padding: 0 $gutter*2 $gutter*2;
+			font-size: 24px;
+			position: relative;
+			margin-right: $gutter;
+
+			&:after {
+				position: absolute;
+				content: "";
+				width: 44px;
+				height: 44px;
+				top: -14px;
+				left: 0;
+				border: 2px solid white;
+				border-radius: 50%;
+			}
+		}
+
+		a {
+			color: inherit;
+			font-weight: bold;
+			text-decoration: underline;
+
+			&.button {
+				font-weight: normal;
+				text-decoration: none;
+			}
+		}
+
+		@include breakpoint-max(sm) {
+			padding: $gutter*5 $gutter*2;
+		}
+	}
+}
+

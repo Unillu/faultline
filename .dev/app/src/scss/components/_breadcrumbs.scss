@@ -1,0 +1,32 @@
+.breadcrumb {
+	padding: 10px 0;
+	border-top: 2px solid palette(secondary);
+	border-bottom: 2px solid palette(secondary);
+	border-radius: 0;
+	margin: 0 $gutter*2;
+
+	a, .active {
+		color: $white;
+	}
+}
+
+.breadcrumb-item {
+	margin-left: 10px;
+
+	&+.breadcrumb-item {
+		&:before {
+			padding: 0;
+			margin-right: 10px;
+		}
+	}
+
+	@include breakpoint-min(md) {
+		margin-left: 20px;
+
+		&+.breadcrumb-item {
+			&:before {
+				margin-right: 20px;
+			}
+		}
+	}
+}
