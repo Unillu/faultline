@@ -16,7 +16,10 @@ get_header(); ?>
 
 <div class="color-primary">
   <section class="container section">
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 	<?php
 	// Start the loop.
 	while ( have_posts() ) : the_post();

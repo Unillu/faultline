@@ -21,6 +21,10 @@ if (has_post_thumbnail()) {
 
 	<header class="hero-container container content grid-container flex-column" style="background-image: url('<?php echo $background; ?>');">
 		<h1 class="blog-post-title"><?php the_title(); ?></h1>
+<<<<<<< Updated upstream
+=======
+		<p class="blog-post-meta">By <?php the_author(); ?><span class="blog-post-date"><?php the_date( '', ', Published ', '' ); ?> </span></p>
+>>>>>>> Stashed changes
 	</header>
 	<section class="section content grid-container flex-column">
 		<?php the_content(); ?>
