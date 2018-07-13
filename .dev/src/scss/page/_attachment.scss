@@ -1,0 +1,22 @@
+.attachment-template-default {
+	padding-top: $gutter*16;
+	background: palette(primary);
+
+	.hero-container {
+		&:after {
+			display: none;
+		}
+	}
+
+	.attachment {
+		a {
+			display: inline-block;
+			box-shadow: 0 5px 10px rgba(palette(dark), .5);
+			transition: box-shadow .5s;
+
+			&:hover {
+				box-shadow: 0 10px 15px rgba(palette(dark), .5);
+			}
+		}
+	}
+}

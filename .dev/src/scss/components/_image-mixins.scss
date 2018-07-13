@@ -1,0 +1,601 @@
+/* This file is generated */
+@mixin img-army-adeptus-astartes() {
+  width: 34px;
+  height: 68px;
+  background-image: url(images/army-adeptus-astartes.png);
+  background-size: 34px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 34px;
+    height: 68px;
+    background-image: url(images/army-adeptus-astartes_2x.png);
+    background-size: 34px 68px;
+  }
+}
+$img-army-adeptus-astartes__width: 34px;
+$img-army-adeptus-astartes__height: 68px;
+$img-army-adeptus-astartes__path: 'images/army-adeptus-astartes_2x.png';
+@mixin img-army-adeptus-mechanicus() {
+  width: 48px;
+  height: 68px;
+  background-image: url(images/army-adeptus-mechanicus.png);
+  background-size: 48px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 48px;
+    height: 68px;
+    background-image: url(images/army-adeptus-mechanicus_2x.png);
+    background-size: 48px 68px;
+  }
+}
+$img-army-adeptus-mechanicus__width: 48px;
+$img-army-adeptus-mechanicus__height: 68px;
+$img-army-adeptus-mechanicus__path: 'images/army-adeptus-mechanicus_2x.png';
+@mixin img-army-aeldari() {
+  width: 25px;
+  height: 68px;
+  background-image: url(images/army-aeldari.png);
+  background-size: 25px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 25px;
+    height: 68px;
+    background-image: url(images/army-aeldari_2x.png);
+    background-size: 25px 68px;
+  }
+}
+$img-army-aeldari__width: 25px;
+$img-army-aeldari__height: 68px;
+$img-army-aeldari__path: 'images/army-aeldari_2x.png';
+@mixin img-army-chaos-daemons() {
+  width: 34px;
+  height: 68px;
+  background-image: url(images/army-chaos-daemons.png);
+  background-size: 34px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 34px;
+    height: 68px;
+    background-image: url(images/army-chaos-daemons_2x.png);
+    background-size: 34px 68px;
+  }
+}
+$img-army-chaos-daemons__width: 34px;
+$img-army-chaos-daemons__height: 68px;
+$img-army-chaos-daemons__path: 'images/army-chaos-daemons_2x.png';
+@mixin img-army-chaos-khorne() {
+  width: 38px;
+  height: 68px;
+  background-image: url(images/army-chaos-khorne.png);
+  background-size: 38px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 38px;
+    height: 68px;
+    background-image: url(images/army-chaos-khorne_2x.png);
+    background-size: 38px 68px;
+  }
+}
+$img-army-chaos-khorne__width: 38px;
+$img-army-chaos-khorne__height: 68px;
+$img-army-chaos-khorne__path: 'images/army-chaos-khorne_2x.png';
+@mixin img-army-chaos-space-marines() {
+  width: 36px;
+  height: 68px;
+  background-image: url(images/army-chaos-space-marines.png);
+  background-size: 36px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 36px;
+    height: 68px;
+    background-image: url(images/army-chaos-space-marines_2x.png);
+    background-size: 36px 68px;
+  }
+}
+$img-army-chaos-space-marines__width: 36px;
+$img-army-chaos-space-marines__height: 68px;
+$img-army-chaos-space-marines__path: 'images/army-chaos-space-marines_2x.png';
+@mixin img-army-daemons() {
+  width: 34px;
+  height: 68px;
+  background-image: url(images/army-daemons.png);
+  background-size: 34px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 34px;
+    height: 68px;
+    background-image: url(images/army-daemons_2x.png);
+    background-size: 34px 68px;
+  }
+}
+$img-army-daemons__width: 34px;
+$img-army-daemons__height: 68px;
+$img-army-daemons__path: 'images/army-daemons_2x.png';
+@mixin img-army-eldar() {
+  width: 29px;
+  height: 68px;
+  background-image: url(images/army-eldar.png);
+  background-size: 29px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 29px;
+    height: 68px;
+    background-image: url(images/army-eldar_2x.png);
+    background-size: 29px 68px;
+  }
+}
+$img-army-eldar__width: 29px;
+$img-army-eldar__height: 68px;
+$img-army-eldar__path: 'images/army-eldar_2x.png';
+@mixin img-army-imperial() {
+  width: 36px;
+  height: 68px;
+  background-image: url(images/army-imperial.png);
+  background-size: 36px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 36px;
+    height: 68px;
+    background-image: url(images/army-imperial_2x.png);
+    background-size: 36px 68px;
+  }
+}
+$img-army-imperial__width: 36px;
+$img-army-imperial__height: 68px;
+$img-army-imperial__path: 'images/army-imperial_2x.png';
+@mixin img-army-imperium() {
+  width: 36px;
+  height: 68px;
+  background-image: url(images/army-imperium.png);
+  background-size: 36px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 36px;
+    height: 68px;
+    background-image: url(images/army-imperium_2x.png);
+    background-size: 36px 68px;
+  }
+}
+$img-army-imperium__width: 36px;
+$img-army-imperium__height: 68px;
+$img-army-imperium__path: 'images/army-imperium_2x.png';
+@mixin img-army-loyalists() {
+  width: 34px;
+  height: 68px;
+  background-image: url(images/army-loyalists.png);
+  background-size: 34px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 34px;
+    height: 68px;
+    background-image: url(images/army-loyalists_2x.png);
+    background-size: 34px 68px;
+  }
+}
+$img-army-loyalists__width: 34px;
+$img-army-loyalists__height: 68px;
+$img-army-loyalists__path: 'images/army-loyalists_2x.png';
+@mixin img-army-mechanicum() {
+  width: 48px;
+  height: 68px;
+  background-image: url(images/army-mechanicum.png);
+  background-size: 48px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 48px;
+    height: 68px;
+    background-image: url(images/army-mechanicum_2x.png);
+    background-size: 48px 68px;
+  }
+}
+$img-army-mechanicum__width: 48px;
+$img-army-mechanicum__height: 68px;
+$img-army-mechanicum__path: 'images/army-mechanicum_2x.png';
+@mixin img-army-necrons() {
+  width: 24px;
+  height: 68px;
+  background-image: url(images/army-necrons.png);
+  background-size: 24px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 24px;
+    height: 68px;
+    background-image: url(images/army-necrons_2x.png);
+    background-size: 24px 68px;
+  }
+}
+$img-army-necrons__width: 24px;
+$img-army-necrons__height: 68px;
+$img-army-necrons__path: 'images/army-necrons_2x.png';
+@mixin img-army-orks() {
+  width: 36px;
+  height: 68px;
+  background-image: url(images/army-orks.png);
+  background-size: 36px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 36px;
+    height: 68px;
+    background-image: url(images/army-orks_2x.png);
+    background-size: 36px 68px;
+  }
+}
+$img-army-orks__width: 36px;
+$img-army-orks__height: 68px;
+$img-army-orks__path: 'images/army-orks_2x.png';
+@mixin img-army-sis() {
+  width: 36px;
+  height: 68px;
+  background-image: url(images/army-sis.png);
+  background-size: 36px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 36px;
+    height: 68px;
+    background-image: url(images/army-sis_2x.png);
+    background-size: 36px 68px;
+  }
+}
+$img-army-sis__width: 36px;
+$img-army-sis__height: 68px;
+$img-army-sis__path: 'images/army-sis_2x.png';
+@mixin img-army-sisters-of-silence() {
+  width: 38px;
+  height: 68px;
+  background-image: url(images/army-sisters-of-silence.png);
+  background-size: 38px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 38px;
+    height: 68px;
+    background-image: url(images/army-sisters-of-silence_2x.png);
+    background-size: 38px 68px;
+  }
+}
+$img-army-sisters-of-silence__width: 38px;
+$img-army-sisters-of-silence__height: 68px;
+$img-army-sisters-of-silence__path: 'images/army-sisters-of-silence_2x.png';
+@mixin img-army-tau() {
+  width: 30px;
+  height: 68px;
+  background-image: url(images/army-tau.png);
+  background-size: 30px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 30px;
+    height: 68px;
+    background-image: url(images/army-tau_2x.png);
+    background-size: 30px 68px;
+  }
+}
+$img-army-tau__width: 30px;
+$img-army-tau__height: 68px;
+$img-army-tau__path: 'images/army-tau_2x.png';
+@mixin img-army-traitors() {
+  width: 36px;
+  height: 68px;
+  background-image: url(images/army-traitors.png);
+  background-size: 36px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 36px;
+    height: 68px;
+    background-image: url(images/army-traitors_2x.png);
+    background-size: 36px 68px;
+  }
+}
+$img-army-traitors__width: 36px;
+$img-army-traitors__height: 68px;
+$img-army-traitors__path: 'images/army-traitors_2x.png';
+@mixin img-army-tyranids() {
+  width: 42px;
+  height: 68px;
+  background-image: url(images/army-tyranids.png);
+  background-size: 42px 68px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 42px;
+    height: 68px;
+    background-image: url(images/army-tyranids_2x.png);
+    background-size: 42px 68px;
+  }
+}
+$img-army-tyranids__width: 42px;
+$img-army-tyranids__height: 68px;
+$img-army-tyranids__path: 'images/army-tyranids_2x.png';
+@mixin img-logo() {
+  width: 75px;
+  height: 75px;
+  background-image: url(images/logo.png);
+  background-size: 75px 75px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 75px;
+    height: 75px;
+    background-image: url(images/logo_2x.png);
+    background-size: 75px 75px;
+  }
+}
+$img-logo__width: 75px;
+$img-logo__height: 75px;
+$img-logo__path: 'images/logo_2x.png';
+@mixin img-marker-large-orange() {
+  width: 41px;
+  height: 62px;
+  background-image: url(images/marker-large-orange.png);
+  background-size: 41px 62px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 41px;
+    height: 62px;
+    background-image: url(images/marker-large-orange_2x.png);
+    background-size: 41px 62px;
+  }
+}
+$img-marker-large-orange__width: 41px;
+$img-marker-large-orange__height: 62px;
+$img-marker-large-orange__path: 'images/marker-large-orange_2x.png';
+@mixin img-marker-large-purple() {
+  width: 41px;
+  height: 62px;
+  background-image: url(images/marker-large-purple.png);
+  background-size: 41px 62px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 41px;
+    height: 62px;
+    background-image: url(images/marker-large-purple_2x.png);
+    background-size: 41px 62px;
+  }
+}
+$img-marker-large-purple__width: 41px;
+$img-marker-large-purple__height: 62px;
+$img-marker-large-purple__path: 'images/marker-large-purple_2x.png';
+@mixin img-marker-large-white() {
+  width: 41px;
+  height: 62px;
+  background-image: url(images/marker-large-white.png);
+  background-size: 41px 62px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 41px;
+    height: 62px;
+    background-image: url(images/marker-large-white_2x.png);
+    background-size: 41px 62px;
+  }
+}
+$img-marker-large-white__width: 41px;
+$img-marker-large-white__height: 62px;
+$img-marker-large-white__path: 'images/marker-large-white_2x.png';
+@mixin img-marker-small-orange() {
+  width: 24px;
+  height: 36px;
+  background-image: url(images/marker-small-orange.png);
+  background-size: 24px 36px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 24px;
+    height: 36px;
+    background-image: url(images/marker-small-orange_2x.png);
+    background-size: 24px 36px;
+  }
+}
+$img-marker-small-orange__width: 24px;
+$img-marker-small-orange__height: 36px;
+$img-marker-small-orange__path: 'images/marker-small-orange_2x.png';
+@mixin img-marker-small-purple() {
+  width: 24px;
+  height: 36px;
+  background-image: url(images/marker-small-purple.png);
+  background-size: 24px 36px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 24px;
+    height: 36px;
+    background-image: url(images/marker-small-purple_2x.png);
+    background-size: 24px 36px;
+  }
+}
+$img-marker-small-purple__width: 24px;
+$img-marker-small-purple__height: 36px;
+$img-marker-small-purple__path: 'images/marker-small-purple_2x.png';
+@mixin img-marker-small-white() {
+  width: 24px;
+  height: 36px;
+  background-image: url(images/marker-small-white.png);
+  background-size: 24px 36px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 24px;
+    height: 36px;
+    background-image: url(images/marker-small-white_2x.png);
+    background-size: 24px 36px;
+  }
+}
+$img-marker-small-white__width: 24px;
+$img-marker-small-white__height: 36px;
+$img-marker-small-white__path: 'images/marker-small-white_2x.png';
+@mixin img-terrain-bryophyta-forgotton-capital-hero() {
+  width: 1200px;
+  height: 487px;
+  background-image: url(images/terrain-bryophyta-forgotton-capital-hero.png);
+  background-size: 1200px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1200px;
+    height: 487px;
+    background-image: url(images/terrain-bryophyta-forgotton-capital-hero_2x.png);
+    background-size: 1200px 487px;
+  }
+}
+$img-terrain-bryophyta-forgotton-capital-hero__width: 1200px;
+$img-terrain-bryophyta-forgotton-capital-hero__height: 487px;
+$img-terrain-bryophyta-forgotton-capital-hero__path: 'images/terrain-bryophyta-forgotton-capital-hero_2x.png';
+@mixin img-footer-lg() {
+  width: 2136px;
+  height: 224px;
+  background-image: url(images/footer-lg.jpg);
+  background-size: 2136px 224px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 2136px;
+    height: 224px;
+    background-image: url(images/footer-lg_2x.jpg);
+    background-size: 2136px 224px;
+  }
+}
+$img-footer-lg__width: 2136px;
+$img-footer-lg__height: 224px;
+$img-footer-lg__path: 'images/footer-lg_2x.jpg';
+@mixin img-footer-md() {
+  width: 992px;
+  height: 224px;
+  background-image: url(images/footer-md.jpg);
+  background-size: 992px 224px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 992px;
+    height: 224px;
+    background-image: url(images/footer-md_2x.jpg);
+    background-size: 992px 224px;
+  }
+}
+$img-footer-md__width: 992px;
+$img-footer-md__height: 224px;
+$img-footer-md__path: 'images/footer-md_2x.jpg';
+@mixin img-footer-sm() {
+  width: 767px;
+  height: 444px;
+  background-image: url(images/footer-sm.jpg);
+  background-size: 767px 444px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 767px;
+    height: 444px;
+    background-image: url(images/footer-sm_2x.jpg);
+    background-size: 767px 444px;
+  }
+}
+$img-footer-sm__width: 767px;
+$img-footer-sm__height: 444px;
+$img-footer-sm__path: 'images/footer-sm_2x.jpg';
+@mixin img-home-hero-lg() {
+  width: 2136px;
+  height: 632px;
+  background-image: url(images/home-hero-lg.jpg);
+  background-size: 2136px 632px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 2136px;
+    height: 632px;
+    background-image: url(images/home-hero-lg_2x.jpg);
+    background-size: 2136px 632px;
+  }
+}
+$img-home-hero-lg__width: 2136px;
+$img-home-hero-lg__height: 632px;
+$img-home-hero-lg__path: 'images/home-hero-lg_2x.jpg';
+@mixin img-home-hero-md() {
+  width: 992px;
+  height: 632px;
+  background-image: url(images/home-hero-md.jpg);
+  background-size: 992px 632px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 992px;
+    height: 632px;
+    background-image: url(images/home-hero-md_2x.jpg);
+    background-size: 992px 632px;
+  }
+}
+$img-home-hero-md__width: 992px;
+$img-home-hero-md__height: 632px;
+$img-home-hero-md__path: 'images/home-hero-md_2x.jpg';
+@mixin img-home-hero-sm() {
+  width: 767px;
+  height: 632px;
+  background-image: url(images/home-hero-sm.jpg);
+  background-size: 767px 632px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 767px;
+    height: 632px;
+    background-image: url(images/home-hero-sm_2x.jpg);
+    background-size: 767px 632px;
+  }
+}
+$img-home-hero-sm__width: 767px;
+$img-home-hero-sm__height: 632px;
+$img-home-hero-sm__path: 'images/home-hero-sm_2x.jpg';
+@mixin img-membership-check() {
+  width: 1200px;
+  height: 1118px;
+  background-image: url(images/membership-check.jpg);
+  background-size: 1200px 1118px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1200px;
+    height: 1118px;
+    background-image: url(images/membership-check_2x.jpg);
+    background-size: 1200px 1118px;
+  }
+}
+$img-membership-check__width: 1200px;
+$img-membership-check__height: 1118px;
+$img-membership-check__path: 'images/membership-check_2x.jpg';
+@mixin img-membership-directory-hero-lg() {
+  width: 2136px;
+  height: 487px;
+  background-image: url(images/membership-directory-hero-lg.jpg);
+  background-size: 2136px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 2136px;
+    height: 487px;
+    background-image: url(images/membership-directory-hero-lg_2x.jpg);
+    background-size: 2136px 487px;
+  }
+}
+$img-membership-directory-hero-lg__width: 2136px;
+$img-membership-directory-hero-lg__height: 487px;
+$img-membership-directory-hero-lg__path: 'images/membership-directory-hero-lg_2x.jpg';
+@mixin img-membership-directory-hero-md() {
+  width: 992px;
+  height: 487px;
+  background-image: url(images/membership-directory-hero-md.jpg);
+  background-size: 992px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 992px;
+    height: 487px;
+    background-image: url(images/membership-directory-hero-md_2x.jpg);
+    background-size: 992px 487px;
+  }
+}
+$img-membership-directory-hero-md__width: 992px;
+$img-membership-directory-hero-md__height: 487px;
+$img-membership-directory-hero-md__path: 'images/membership-directory-hero-md_2x.jpg';
+@mixin img-membership-directory-hero-sm() {
+  width: 767px;
+  height: 487px;
+  background-image: url(images/membership-directory-hero-sm.jpg);
+  background-size: 767px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 767px;
+    height: 487px;
+    background-image: url(images/membership-directory-hero-sm_2x.jpg);
+    background-size: 767px 487px;
+  }
+}
+$img-membership-directory-hero-sm__width: 767px;
+$img-membership-directory-hero-sm__height: 487px;
+$img-membership-directory-hero-sm__path: 'images/membership-directory-hero-sm_2x.jpg';
+@mixin img-terrain-hero-lg() {
+  width: 2136px;
+  height: 487px;
+  background-image: url(images/terrain-hero-lg.jpg);
+  background-size: 2136px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 2136px;
+    height: 487px;
+    background-image: url(images/terrain-hero-lg_2x.jpg);
+    background-size: 2136px 487px;
+  }
+}
+$img-terrain-hero-lg__width: 2136px;
+$img-terrain-hero-lg__height: 487px;
+$img-terrain-hero-lg__path: 'images/terrain-hero-lg_2x.jpg';
+@mixin img-terrain-hero-md() {
+  width: 992px;
+  height: 448px;
+  background-image: url(images/terrain-hero-md.jpg);
+  background-size: 992px 448px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 992px;
+    height: 448px;
+    background-image: url(images/terrain-hero-md_2x.jpg);
+    background-size: 992px 448px;
+  }
+}
+$img-terrain-hero-md__width: 992px;
+$img-terrain-hero-md__height: 448px;
+$img-terrain-hero-md__path: 'images/terrain-hero-md_2x.jpg';
+@mixin img-terrain-hero-sm() {
+  width: 767px;
+  height: 487px;
+  background-image: url(images/terrain-hero-sm.jpg);
+  background-size: 767px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 767px;
+    height: 487px;
+    background-image: url(images/terrain-hero-sm_2x.jpg);
+    background-size: 767px 487px;
+  }
+}
+$img-terrain-hero-sm__width: 767px;
+$img-terrain-hero-sm__height: 487px;
+$img-terrain-hero-sm__path: 'images/terrain-hero-sm_2x.jpg';
