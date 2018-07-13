@@ -44,9 +44,11 @@ $size = 'full';
 					foreach( $images as $image ):
 
 						$i++ ?>
-						<div class="grid-xs-col12 grid-md-col6">
-							<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-							<?php echo $image['caption']; ?>
+						<div class="grid-xs-col12 grid-md-col6 blog-gallery-image">
+							<figure>
+								<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+								<figcaption class="blog-gallery-image-caption"><?php echo $image['caption']; ?></figcaption>
+							</figure>
 						</div>
 
 					<?php endforeach;

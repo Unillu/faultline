@@ -5,11 +5,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<<<<<<< Updated upstream
-	
-=======
-
->>>>>>> Stashed changes
 	<div class="card">
 		<div class="entry-img">
 			<?php if ( has_post_thumbnail() ) : ?>
@@ -22,10 +17,6 @@
 		<div class="entry-container">
 			<header class="entry-header">
 				<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php materialwp_posted_on(); ?>
