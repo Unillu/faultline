@@ -177,3 +177,19 @@ blockquote {
 .headline {
   @include font(headline);
 }
+
+blockquote {
+	@include font(headline);
+	position: relative;
+	color: $white;
+	background: palette(secondary);
+	font-size: 1.5em;
+	text-align: center;
+	padding: 32px;
+}
+
+
+
+
+
+

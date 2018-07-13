@@ -1,4 +1,13 @@
 .blog-post {
+	border-bottom: 2px solid palette(secondary);
+	margin-bottom: 20px;
+
+	p:first-child::first-letter {
+		font-size: 3em;
+		color: palette(secondary);
+
+		@include font('headline');
+	}
 
 	.hero-container {
 		padding: 40px 16px;
@@ -30,6 +39,30 @@
 		font-style: italic;
 	}
 
+	.blog-gallery {
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+	}
+
+	.blog-gallery-image {
+		@include breakpoint-min(md) {
+			&:nth-child(odd) {
+				padding-right: 10px;
+			}
+
+			&:nth-child(even) {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	.blog-gallery-image-caption {
+		font-size: .8em;
+	}
+
 	.section {
 		font-size: 1.25em;
 		line-height: 1.6em;
@@ -37,6 +70,34 @@
 
 		@include breakpoint-min(md) {
 			padding: 40px 80px;
+		}
+	}
+
+	blockquote {
+		padding-top: 40px;
+		margin: 32px 0;
+		position: relative;
+
+		p:first-child::first-letter {
+			color: $white;
+			font-size: 1.5em;
+		}
+
+		&:after, &:before {
+			position: absolute;
+			font-size: 5em;
+			line-height: 0;
+			top: 60px;
+		}
+
+		&:after {
+			content: "‘";
+			left: 0;
+		}
+
+		&:before {
+			content: "’";
+			right: 0;
 		}
 	}
 

@@ -162,14 +162,8 @@
 }
 
 .member-quote {
-	@include font(headline);
-	position: relative;
-	color: $white;
-	background: palette(secondary);
-	font-size: 6em;
-	text-align: center;
+	font-size: 3em;
 	margin-top: 60px;
-	padding-top: $gutter*2;
 
 	&:before {
 		content: 'BATTLE CRY';
