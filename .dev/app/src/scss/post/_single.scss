@@ -1,13 +1,43 @@
 .blog-post {
 
 	.hero-container {
-		margin-bottom: 40px;
+		padding: 40px 16px;
+		margin: -40px -16px 40px -16px;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		&:after {
+			left: 0;
+		}
+
+		@include breakpoint-min(md) {
+			padding: 80px 40px;
+			margin: -80px -32px 40px -32px;
+		}
 	}
 
 	.blog-post-title {
-		padding: 40px 20px;
+		padding: 40px 20px 0;
+	}
+
+	.blog-post-meta {
+		border-top: 2px solid white;
+		padding: 10px 0 0;
+		margin: 0 20px 40px;
+	}
+
+	.blog-post-date {
+		font-style: italic;
+	}
+
+	.section {
+		font-size: 1.25em;
+		line-height: 1.6em;
+		padding-top: 20px;
+
+		@include breakpoint-min(md) {
+			padding: 40px 80px;
+		}
 	}
 
 }
