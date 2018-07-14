@@ -28,16 +28,16 @@
 
 		@extend %background-image;
 
-		@include img-membership-directory-hero-sm;
+		@include img-blog-hero-sm;
 
 		@include breakpoint-min(md) {
 			margin-bottom: $gutter*10;
 
-			@include img-membership-directory-hero-md;
+			@include img-blog-hero-md;
 		}
 
 		@include breakpoint-min(lg) {
-			@include img-membership-directory-hero-lg
+			@include img-blog-hero-lg;
 		}
 
 		&:after {
