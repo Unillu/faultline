@@ -23,10 +23,12 @@ $size = 'full';
 	<div class="grid-container">
 		<div class="blog-post">
 
-			<header class="hero-container container content grid-container flex-column" style="background-image: url('<?php echo $background; ?>');">
-				<h2 class="blog-post-title"><?php the_title(); ?></h2>
-				<p class="blog-post-meta">By <?php the_author(); ?><span class="blog-post-date"><?php the_date( '', ', Published ', '' ); ?> </span></p>
-			</header>
+			<a href="<?php echo esc_url( get_permalink() ); ?>">
+				<header class="hero-container container content grid-container flex-column" style="background-image: url('<?php echo $background; ?>');">
+					<h2 class="blog-post-title"><?php the_title(); ?></h2>
+					<p class="blog-post-meta">By <?php the_author(); ?><span class="blog-post-date"><?php the_date( '', ', Published ', '' ); ?> </span></p>
+				</header>
+			</a>
 			<section class="section content grid-container flex-column">
 				<?php the_content(); ?>
 			</section>

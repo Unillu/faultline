@@ -22,6 +22,8 @@ get_header(); ?>
 			</div>
 		</header>
 
+		<?php get_template_part('categories', 'Categories'); ?>
+
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 
@@ -29,5 +31,7 @@ get_header(); ?>
 
 		endwhile; endif;
 		?>
+
+		<?php get_template_part('categories', 'Categories'); ?>
 
 <?php get_footer(); ?>
