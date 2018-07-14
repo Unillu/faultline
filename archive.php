@@ -18,7 +18,7 @@ get_header(); ?>
 			<header class="hero-container grid-container align-items-end">
 				<div class="container">
 					<div class="hero-headline grid-xs-col-12 grid-md-col7 grid-md-offset-col1">
-						<h1><?php echo $category->name; ?></h1>
+						<h1>Category: <?php echo $category->name; ?></h1>
 					</div>
 				</div>
 			</header>
