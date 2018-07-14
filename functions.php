@@ -8,3 +8,4 @@ require get_template_directory() . '/functions/menus.php';
 require get_template_directory() . '/functions/thumbnails.php';
 require get_template_directory() . '/functions/post-format.php';
 require get_template_directory() . '/functions/image.php';
+require get_template_directory() . '/functions/read-more.php';
