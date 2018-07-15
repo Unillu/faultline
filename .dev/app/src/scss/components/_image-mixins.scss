@@ -404,6 +404,51 @@ $img-marker-small-white__path: 'images/marker-small-white_2x.png';
 $img-terrain-bryophyta-forgotton-capital-hero__width: 1200px;
 $img-terrain-bryophyta-forgotton-capital-hero__height: 487px;
 $img-terrain-bryophyta-forgotton-capital-hero__path: 'images/terrain-bryophyta-forgotton-capital-hero_2x.png';
+@mixin img-blog-hero-lg() {
+  width: 2136px;
+  height: 487px;
+  background-image: url(images/blog-hero-lg.jpg);
+  background-size: 2136px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 2136px;
+    height: 487px;
+    background-image: url(images/blog-hero-lg_2x.jpg);
+    background-size: 2136px 487px;
+  }
+}
+$img-blog-hero-lg__width: 2136px;
+$img-blog-hero-lg__height: 487px;
+$img-blog-hero-lg__path: 'images/blog-hero-lg_2x.jpg';
+@mixin img-blog-hero-md() {
+  width: 992px;
+  height: 487px;
+  background-image: url(images/blog-hero-md.jpg);
+  background-size: 992px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 992px;
+    height: 487px;
+    background-image: url(images/blog-hero-md_2x.jpg);
+    background-size: 992px 487px;
+  }
+}
+$img-blog-hero-md__width: 992px;
+$img-blog-hero-md__height: 487px;
+$img-blog-hero-md__path: 'images/blog-hero-md_2x.jpg';
+@mixin img-blog-hero-sm() {
+  width: 767px;
+  height: 487px;
+  background-image: url(images/blog-hero-sm.jpg);
+  background-size: 767px 487px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 767px;
+    height: 487px;
+    background-image: url(images/blog-hero-sm_2x.jpg);
+    background-size: 767px 487px;
+  }
+}
+$img-blog-hero-sm__width: 767px;
+$img-blog-hero-sm__height: 487px;
+$img-blog-hero-sm__path: 'images/blog-hero-sm_2x.jpg';
 @mixin img-footer-lg() {
   width: 2136px;
   height: 224px;
