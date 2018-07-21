@@ -14,16 +14,19 @@ if (has_post_thumbnail()) {
 
 	$background = get_the_post_thumbnail_url();
 }
-
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $rows = get_field('additional_content');
 $size = 'full';
+$date = get_the_time( 'F j, Y');
 ?>
 
 <div class="blog-post">
 
 	<header class="hero-container container content grid-container flex-column" style="background-image: url('<?php echo $background; ?>');">
 		<h1 class="blog-post-title"><?php the_title(); ?></h1>
-		<p class="blog-post-meta">By <?php the_author(); ?><span class="blog-post-date"><?php the_date( '', ', Published ', '' ); ?> </span></p>
+		<?php if ( strpos($url,'facebook-event') == false ) { ?>
+			<p class="blog-post-meta">By <?php the_author(); ?>, <span class="blog-post-date">Published <?php echo $date; ?> </span></p>
+		<?php } ?>
 	</header>
 	<section class="section content grid-container flex-column">
 		<?php the_content(); ?>
