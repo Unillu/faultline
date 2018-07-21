@@ -4,10 +4,7 @@
  */
 global $ife_events;
 
-if( $event_id == '' ){
-	$event_id = get_the_ID();
-}
-
+$event_id = get_the_ID();
 $start_date_str = get_post_meta( $event_id, 'start_ts', true );
 $end_date_str = get_post_meta( $event_id, 'end_ts', true );
 $start_date_formated = date_i18n( 'F j', $start_date_str );
