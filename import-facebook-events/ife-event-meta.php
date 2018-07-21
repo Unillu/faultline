@@ -126,4 +126,7 @@ if( $venue_name != '' && ( $venue_address != '' || $venue['city'] != '' ) ){
 }
 ?>
 </div>
-<h2>Additional information:</h2>
+
+<?php if( '' !== get_post()->post_content ) { ?>
+	<h2>Additional information:</h2>
+<?php } ?>
