@@ -22,24 +22,11 @@ get_header(); ?>
 				<a href="<?php echo get_page_link( 15 ); ?>" class="button button-primary">Our Principles</a>
 			</div>
 		</header>
-
-<!-- 		<?php
-		//if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-		//	get_template_part( 'post-templates/content', get_post_format() );
-
-		//endwhile; endif;
-		?> -->
-
 		<div class="color-primary">
 		  <section class="container events section">
 			<h2 class="font-secondary">Current Events</h2>
 
-			<div class="grid-container">
-
-				<?php the_field('events'); ?>
-
-			</div> <!-- /.grid-container -->
+			<div class="grid-container"><?php the_field('events'); ?></div> <!-- /.grid-container -->
 
 		  </section> <!-- /.container -->
 		</div>

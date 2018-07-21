@@ -8,6 +8,7 @@
 
 		.event-image {
 			height: 306px;
+			width: 100%;
 
 			&:after {
 				background: rgba(palette(dark), .5);
@@ -122,4 +123,9 @@
 
 .ife_eventmeta {
 	overflow: auto;
+}
+
+.row_grid {
+	width: 100%;
+	margin: 0 !important; // thanks a lot, plugin
 }

@@ -22,7 +22,6 @@ if( $event_address != '' && $venue_address != '' ){
 	$event_address = $venue_address;
 }
 
-
 $image_url =  array();
 if ( '' !== get_the_post_thumbnail() ){
 	$image_url =  wp_get_attachment_image_src( get_post_thumbnail_id(  get_the_ID() ), 'full' );
@@ -31,27 +30,19 @@ if ( '' !== get_the_post_thumbnail() ){
 	$image_url[] =  "http://placehold.it/420x150?text=".$image_date;
 }
 
-global $ife_events;
-
-if( $event_id == '' ){
-	$event_id = get_the_ID();
-}
-
-$start_date_string = get_post_meta( $event_id, 'start_ts', true );
-$end_date_string = get_post_meta( $event_id, 'end_ts', true );
+$start_date_string = get_post_meta( get_the_ID(), 'start_ts', true );
+$end_date_string = get_post_meta( get_the_ID(), 'end_ts', true );
 $start_date_formatted = date_i18n( 'm/d/Y', $event_date );
 $end_date_formatted = date_i18n( 'm/d/Y', $event_date );
-$start_time = date_i18n( 'gA', $start_date_str );
-$end_time = date_i18n( 'gA', $end_date_str );
+$start_time = date_i18n( 'gA', $start_date_string );
+$end_time = date_i18n( 'gA', $end_date_string );
 $website = get_post_meta( get_the_ID(), 'ife_event_link', true );
 ?>
 
 <div class="grid-xs-col12 grid-md-col6 grid-xl-col4">
 	<a href="<?php echo esc_url( get_permalink() ) ?>" target="_blank" class="block-link">
 		<figure <?php post_class( "event-info card" );?>>
-		  <div class="event-image">
-			<img src="<?php echo $image_url[0]; ?>" alt=""/>
-		  </div>
+		  <div class="event-image" style="background-image: url('<?php echo $image_url[0]; ?>')"></div>
 		  <figcaption class="event-caption">
 			<div class="event-details">
 				<span class="date"><?php echo $start_date_formatted ?></span>
