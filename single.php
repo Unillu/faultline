@@ -9,6 +9,7 @@
  * @since 1.0
  * @version 1.0
  */
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
 get_header(); ?>
 
@@ -33,15 +34,16 @@ get_header(); ?>
 		endif;
 
 		// Previous/next post navigation.
-		the_post_navigation( array(
-			'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'faultline' ) . '</span> ' .
-				'<span class="screen-reader-text">' . __( ':', 'faultline' ) . '</span> ' .
-				'<span class="post-title">%title</span>',
-			'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'faultline' ) . '</span> ' .
-				'<span class="screen-reader-text">' . __( ':', 'faultline' ) . '</span> ' .
-				'<span class="post-title">%title</span>',
-		) );
-
+		if ( strpos($url,'facebook-event') == false ) {
+			the_post_navigation( array(
+				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'faultline' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( ':', 'faultline' ) . '</span> ' .
+					'<span class="post-title">%title</span>',
+				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'faultline' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( ':', 'faultline' ) . '</span> ' .
+					'<span class="post-title">%title</span>',
+			) );
+		}
 	// End the loop.
 	endwhile;
 	?>
