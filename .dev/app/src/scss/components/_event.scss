@@ -109,6 +109,12 @@
 	margin-bottom: $gutter*5;
 }
 
+.facebook_events {
+	.blog-post {
+		border-bottom: none;
+	}
+}
+
 .facebook_category-private {
 	.members {
 		display: block;
