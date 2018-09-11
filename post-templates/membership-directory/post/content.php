@@ -222,9 +222,18 @@ $facebook_profile = get_field('facebook_profile');
 					<h2 class="member-question">What army is your favorite and why?</h2>
 					<p class="member-answer"><?php the_field('question_5'); ?></p>
 				<?php endif; ?>
-					<p class="member-back">
-						<a href="<?php echo get_page_link( 17 ); ?>" class="button button-dark">Back to All Members</a>
-					</p>
+			</div>
+		</div>
+
+		<?php
+		echo display_post_via_specific_author( get_the_author_meta('user_nicename') );
+		?>
+
+		<div class="grid-xs-col12 grid-md-col8 grid-md-offset-col4">
+			<div class="member-end">
+				<p class="member-back">
+					<a href="<?php echo get_page_link( 17 ); ?>" class="button button-dark">Back to All Members</a>
+				</p>
 			</div>
 		</div>
 
