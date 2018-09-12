@@ -99,3 +99,13 @@ gulp.task('default', cb =>
     cb
   )
 );
+
+// Gulp watch 
+gulp.task('watch', function(){
+  gulp.watch(['app/src/style.scss', 'app/src/scss/**/*.scss'], ['styles']);
+  gulp.watch(['app/images/*.png', 'app/images/*.jpg'], ['cssimage']); 
+});
+
+
+
+
