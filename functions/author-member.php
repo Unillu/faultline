@@ -20,9 +20,8 @@ function display_post_via_specific_author( $nicename ) {
 
 	// The Loop
 	if ( $the_query->have_posts() ) {
-		echo '<div class="grid-xs-col12 grid-md-col8 grid-md-offset-col4">
-			<div class="member-blog">
-			<h2>Read posts by '. $author .'</h2>
+		echo '<div class="member-blog">
+			<h2 class="member-blog-header">Recent posts by '. $author .':</h2>
 		';  while ( $the_query->have_posts() ) {
 			$the_query->the_post();
 			$categories = get_the_category();
@@ -31,18 +30,19 @@ function display_post_via_specific_author( $nicename ) {
 
 			<div class="grid-xs-col12 grid-md-col6">
 				<a href="'. get_the_permalink() . '" title="' . get_the_title() . '" class="block-link">
-					<figure class="membership-info card">
-						<div class="membership-image">
+					<figure class="blog-info card">
+						<div class="blog-image">
 							<h3 class="blog-title"> ' . get_the_title() . ' </h3>
+							' . get_the_post_thumbnail() . '
 						</div>
 
-						<figcaption class="membership-caption">
-							<div class="membership-name">
+						<figcaption class="blog-excerpt">
+							<div class="blog-name">
 								<p class="description">' . get_the_excerpt() . '</p>
 							</div>
 
-							<div class="membership-place">
-								<p class="location"> </p>
+							<div class="blog-link">
+								<span class="read-more">Read more&hellip;</span>
 							</div>
 						</figcaption>
 					</figure>
@@ -54,8 +54,7 @@ function display_post_via_specific_author( $nicename ) {
 			wp_reset_postdata();
 		};
 
-		'</div>
-		</div>';
+		'</div>';
 
 	}
 }
