@@ -51,7 +51,7 @@ if( $images ): ?>
 					<?php $i++ ?>
 
 				    <div class="carousel-item <?php if( $i ==1 ){ echo "active"; } ?>">
-				    	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+				    	<img src="<?php echo wp_get_attachment_image_url( $image['ID'], $size); ?>" />
 				    </div>
 
 				    <?php endforeach; ?>
@@ -71,7 +71,7 @@ if( $images ): ?>
 			<figure class="terrain-mat">
 				<img src="<?php the_field('terrain_mat');?>" alt=" " />
 				<figcaption class="terrain-mat-description">
-					The Mat: <?php the_field('mat_description') ?>
+					<span class="mat-callout">The Mat:</span> <?php the_field('mat_description') ?>
 				</figcaption>
 			</figure>
 
