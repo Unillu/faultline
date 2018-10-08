@@ -14,7 +14,7 @@ This repository should be cloned into the wp-content/themes directory. In the Wo
 * Install [Sass](https://sass-lang.com/install).
 * Install Wordpress locally with [Mamp](https://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP).
 
-To request the Faultline database for your local setup, send me a message. 
+To request the Faultline database for your local setup, send me a message. You'll need to install this plugin into your local site: All-in-One WP Migration
 
 ## Installing
 

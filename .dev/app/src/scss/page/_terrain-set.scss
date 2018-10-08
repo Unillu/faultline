@@ -24,29 +24,42 @@
 
 		color: palette(secondary);
 		text-transform: none;
-		font-size: 36px;
 		line-height: 42px;
 		font-weight: 600;
-		margin: $gutter*5 0;
+		margin: $gutter*2 0;
+
+		@include breakpoint-min(md) {
+			margin: $gutter*5 0;
+			font-size: 36px;
+		}
 	}
 
 	.terrain-specs {
-		background: $white;
-		padding: 0 8.333333% $gutter*5;
-		border-radius: 5px 5px 0 0;
+		padding: 0 4% $gutter*5;
 		margin-bottom: -$gutter*5;
+		background: $white;
+		border-radius: 5px 5px 0 0;
+
+		@include breakpoint-min(md) {
+			padding: 0 8.333333% $gutter*5;
+		}
 
 		.location {
 			text-align: center;
 		}
 
 		.terrain-mat-description {
-			@include font(headline);
+			padding: 0 0 $gutter*2;
+			margin: $gutter*2 0;
+			border-bottom: palette(primary) 5px solid;
+			line-height: 1.5;
 
-			letter-spacing: 1px;
-			line-height: 20px;
-			margin-top: 20px;
-			font-size: 24px;
+			.mat-callout {
+				@include font(headline);
+
+				letter-spacing: 1px;
+				font-weight: bold;
+			}
 		}
 
 		.terrain-name {
@@ -65,7 +78,6 @@
 
 		.terrain-rules-image {
 			max-width: 300px;
-			max-height: 300px;
 			margin: 0 auto $gutter*3;
 			flex: 1;
 

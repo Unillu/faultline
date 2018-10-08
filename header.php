@@ -27,6 +27,8 @@
 	<meta name="msapplication-TileColor" content="#3B3158">
 	<!-- Color the status bar on mobile devices -->
 	<meta name="theme-color" content="#3B3158">
+
+<?php if( !current_user_can('administrator') ) {  ?>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101217209-2"></script>
 	<script>
@@ -36,12 +38,15 @@
 
 	  gtag('config', 'UA-101217209-2');
 	</script>
+<?php } ?>
+
+
 	<?php wp_head();?>
 </head>
 
 <?php
 	global $post;
-    $post_slug = $post->post_type;
+	$post_slug = $post->post_type;
 	$name_class = $post->post_name;
 
 	$classes = array(
@@ -52,7 +57,7 @@
 
 <body>
 
-	<?php if (is_home()) { ?>
+	<?php if (is_front_page() && is_home()) { ?>
 	<main class="home">
 		<?php
 	} else { ?>
