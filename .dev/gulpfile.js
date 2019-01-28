@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var cssimage = require('gulp-css-image');
+var replace = require('gulp-replace');
 
 // Generate SCSS for all images in images folder
 gulp.task('cssimage', function(){
