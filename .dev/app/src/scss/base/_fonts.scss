@@ -34,7 +34,7 @@
 		text-transform: uppercase;
 		font-weight: normal;
 	} @else {
-		@warn 'The options are sans-serif or headline'
+		@warn 'The options are sans-serif or headline';
 	}
 }
 
@@ -187,9 +187,3 @@ blockquote {
 	text-align: center;
 	padding: 32px;
 }
-
-
-
-
-
-

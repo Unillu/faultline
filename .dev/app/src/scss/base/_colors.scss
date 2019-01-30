@@ -36,7 +36,8 @@ $cyan:    #007E92;
 $main: (
 	primary: $purple,
 	secondary: $yellow,
-  dark: $black
+  dark: $black,
+  white: $white
 );
 
 @function palette($key) {
@@ -54,6 +55,14 @@ $main: (
         &.dark      { background-color: mix($color, black, 30%); }
         &.gradient	{ background: linear-gradient(90deg, mix($color, black, 50%), mix($color, black, 30%));}
       }
+    }
+  }
+}
+
+@each $name, $color in $main {
+  .font {
+    &-#{$name}{
+      color: $color;
     }
   }
 }
