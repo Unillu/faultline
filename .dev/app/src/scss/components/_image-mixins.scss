@@ -314,21 +314,51 @@ $img-logo__path: 'images/logo_2x.png';
 $img-maelstrom-cherry__width: 139px;
 $img-maelstrom-cherry__height: 81px;
 $img-maelstrom-cherry__path: 'images/maelstrom-cherry_2x.png';
+@mixin img-maelstrom-dice() {
+  width: 81px;
+  height: 80px;
+  background-image: url(images/maelstrom-dice.png);
+  background-size: 81px 80px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 81px;
+    height: 80px;
+    background-image: url(images/maelstrom-dice_2x.png);
+    background-size: 81px 80px;
+  }
+}
+$img-maelstrom-dice__width: 81px;
+$img-maelstrom-dice__height: 80px;
+$img-maelstrom-dice__path: 'images/maelstrom-dice_2x.png';
 @mixin img-maelstrom-hero-banner-lg() {
+  width: 1016px;
+  height: 407px;
+  background-image: url(images/maelstrom-hero-banner-lg.png);
+  background-size: 1016px 407px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1016px;
+    height: 407px;
+    background-image: url(images/maelstrom-hero-banner-lg_2x.png);
+    background-size: 1016px 407px;
+  }
+}
+$img-maelstrom-hero-banner-lg__width: 1016px;
+$img-maelstrom-hero-banner-lg__height: 407px;
+$img-maelstrom-hero-banner-lg__path: 'images/maelstrom-hero-banner-lg_2x.png';
+@mixin img-maelstrom-hero-banner-sm() {
   width: 300px;
   height: 308px;
-  background-image: url(images/maelstrom-hero-banner-lg.png);
+  background-image: url(images/maelstrom-hero-banner-sm.png);
   background-size: 300px 308px;
   @media screen and (min-resolution: 2dppx) {
     width: 300px;
     height: 308px;
-    background-image: url(images/maelstrom-hero-banner-lg_2x.png);
+    background-image: url(images/maelstrom-hero-banner-sm_2x.png);
     background-size: 300px 308px;
   }
 }
-$img-maelstrom-hero-banner-lg__width: 300px;
-$img-maelstrom-hero-banner-lg__height: 308px;
-$img-maelstrom-hero-banner-lg__path: 'images/maelstrom-hero-banner-lg_2x.png';
+$img-maelstrom-hero-banner-sm__width: 300px;
+$img-maelstrom-hero-banner-sm__height: 308px;
+$img-maelstrom-hero-banner-sm__path: 'images/maelstrom-hero-banner-sm_2x.png';
 @mixin img-maelstrom-image-bar-lg() {
   width: 1200px;
   height: 598px;
@@ -479,21 +509,6 @@ $img-maelstrom-logo-alt__path: 'images/maelstrom-logo-alt_2x.png';
 $img-maelstrom-skull__width: 67px;
 $img-maelstrom-skull__height: 80px;
 $img-maelstrom-skull__path: 'images/maelstrom-skull_2x.png';
-@mixin img-maesltrom-dice() {
-  width: 81px;
-  height: 80px;
-  background-image: url(images/maesltrom-dice.png);
-  background-size: 81px 80px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 81px;
-    height: 80px;
-    background-image: url(images/maesltrom-dice_2x.png);
-    background-size: 81px 80px;
-  }
-}
-$img-maesltrom-dice__width: 81px;
-$img-maesltrom-dice__height: 80px;
-$img-maesltrom-dice__path: 'images/maesltrom-dice_2x.png';
 @mixin img-marker-large-orange() {
   width: 41px;
   height: 62px;

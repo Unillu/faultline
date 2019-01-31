@@ -170,6 +170,14 @@ blockquote {
 	display: block;
 }
 
+.strong {
+	font-weight: bold;
+}
+
+.link {
+	text-decoration: underline;
+}
+
 .sans {
   @include font(sans-serif);
 }
