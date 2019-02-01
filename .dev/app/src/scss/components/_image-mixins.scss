@@ -284,6 +284,36 @@ $img-army-traitors__path: 'images/army-traitors_2x.png';
 $img-army-tyranids__width: 42px;
 $img-army-tyranids__height: 68px;
 $img-army-tyranids__path: 'images/army-tyranids_2x.png';
+@mixin img-home-hero-tau() {
+  width: 1700px;
+  height: 1700px;
+  background-image: url(images/home-hero-tau.png);
+  background-size: 1700px 1700px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1700px;
+    height: 1700px;
+    background-image: url(images/home-hero-tau_2x.png);
+    background-size: 1700px 1700px;
+  }
+}
+$img-home-hero-tau__width: 1700px;
+$img-home-hero-tau__height: 1700px;
+$img-home-hero-tau__path: 'images/home-hero-tau_2x.png';
+@mixin img-home-hero-tyranid() {
+  width: 1700px;
+  height: 1700px;
+  background-image: url(images/home-hero-tyranid.png);
+  background-size: 1700px 1700px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1700px;
+    height: 1700px;
+    background-image: url(images/home-hero-tyranid_2x.png);
+    background-size: 1700px 1700px;
+  }
+}
+$img-home-hero-tyranid__width: 1700px;
+$img-home-hero-tyranid__height: 1700px;
+$img-home-hero-tyranid__path: 'images/home-hero-tyranid_2x.png';
 @mixin img-logo() {
   width: 75px;
   height: 75px;
