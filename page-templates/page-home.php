@@ -22,6 +22,19 @@ get_header(); ?>
 				<a href="<?php echo get_page_link( 15 ); ?>" class="button button-primary">Our Principles</a>
 			</div>
 		</header>
+
+		<!-- Event banner -->
+
+		<div class="color-secondary">
+		  <section class="container maelstrom-event-home-section section">
+		  	<h2 class="font-primary maelstrom-home-header">Join us for the first ever</h2>
+			<div class="maelstrom-hero"></div>
+			<a href="<?php echo get_page_link( 977 ); ?>" class="button button-dark">Learn More About the Event</a>
+		  </section> <!-- /.container -->
+		</div>
+
+		<!-- end Event banner -->
+
 		<div class="color-primary">
 		  <section class="container events section">
 			<h2 class="font-secondary">Current Events</h2>
