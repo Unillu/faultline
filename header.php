@@ -2,6 +2,7 @@
 <html lang="">
 
 <head>
+	<?php if( !current_user_can('administrator') ) {  ?>
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,6 +10,7 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-T83DZSH');</script>
 		<!-- End Google Tag Manager -->
+	<?php } ?>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
@@ -63,10 +65,12 @@
 ?>
 
 <body>
+	<?php if( !current_user_can('administrator') ) {  ?>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T83DZSH"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
+	<?php } ?>
 
 	<?php if (is_front_page() && is_home()) { ?>
 	<main class="home">
