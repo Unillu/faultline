@@ -25,7 +25,7 @@
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Web Starter Kit">
-	<link rel="icon" sizes="192x192" href="<?php echo esc_url( home_url( '/' ) ); ?>images/touch/chrome-touch-icon-192x192.png">
+	<link rel="icon" sizes="192x192" href="<?php echo get_bloginfo('template_directory'); ?>/images/touch/chrome-touch-icon-192x192.png">
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
