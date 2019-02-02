@@ -17,9 +17,17 @@ get_header(); ?>
 		<?php get_template_part('./navigation', 'Main Navigation'); ?>
 
 		<header class="hero-container grid-container justify-content-center">
-			<div class="hero-headline align-self-center">
+			<div class="hero-headline align-self-end">
 				<h1 class="title"><?php echo get_bloginfo( 'name' ); ?> <span class="subhead"><?php echo get_bloginfo( 'description' ); ?></span></h1>
-				<a href="<?php echo get_page_link( 15 ); ?>" class="button button-primary">Our Principles</a>
+				<a href="<?php echo get_page_link( 15 ); ?>" class="button button-secondary">Our Principles</a>
+			</div>
+			<div class="home-hero-bottom-mask"></div>
+			<div id="scene" class="home-parallax">
+				<div data-depth="0.4" class="home-hero-parallax-2"></div>
+				<div data-depth="0.3" class="home-hero-parallax-1"></div>
+				<div data-depth="0.2" class="home-hero-sun"></div>
+				<img data-depth="0.7" class="fighter fighter-baddie" name="baddie" src=""/>
+				<img data-depth="0.9" class="fighter fighter-goodie" name="goodie" src=""/>
 			</div>
 		</header>
 

@@ -734,51 +734,6 @@ $img-footer-md__path: 'images/footer-md_2x.jpg';
 $img-footer-sm__width: 767px;
 $img-footer-sm__height: 444px;
 $img-footer-sm__path: 'images/footer-sm_2x.jpg';
-@mixin img-home-hero-lg() {
-  width: 2136px;
-  height: 632px;
-  background-image: url(images/home-hero-lg.jpg);
-  background-size: 2136px 632px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 2136px;
-    height: 632px;
-    background-image: url(images/home-hero-lg_2x.jpg);
-    background-size: 2136px 632px;
-  }
-}
-$img-home-hero-lg__width: 2136px;
-$img-home-hero-lg__height: 632px;
-$img-home-hero-lg__path: 'images/home-hero-lg_2x.jpg';
-@mixin img-home-hero-md() {
-  width: 992px;
-  height: 632px;
-  background-image: url(images/home-hero-md.jpg);
-  background-size: 992px 632px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 992px;
-    height: 632px;
-    background-image: url(images/home-hero-md_2x.jpg);
-    background-size: 992px 632px;
-  }
-}
-$img-home-hero-md__width: 992px;
-$img-home-hero-md__height: 632px;
-$img-home-hero-md__path: 'images/home-hero-md_2x.jpg';
-@mixin img-home-hero-sm() {
-  width: 767px;
-  height: 632px;
-  background-image: url(images/home-hero-sm.jpg);
-  background-size: 767px 632px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 767px;
-    height: 632px;
-    background-image: url(images/home-hero-sm_2x.jpg);
-    background-size: 767px 632px;
-  }
-}
-$img-home-hero-sm__width: 767px;
-$img-home-hero-sm__height: 632px;
-$img-home-hero-sm__path: 'images/home-hero-sm_2x.jpg';
 @mixin img-membership-check() {
   width: 1200px;
   height: 1118px;
