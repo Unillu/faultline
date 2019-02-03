@@ -29,8 +29,8 @@
 	.membership-check {
 		@extend %background-image;
 		@include img-membership-check;
-		height: auto;
-		background-size: cover;
+		height: auto !important;
+		background-size: cover !important;
 
 		padding: $gutter*10 0;
 		color: $white;

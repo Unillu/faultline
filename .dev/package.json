@@ -1,33 +1,36 @@
 {
+  "name": "faultline",
+  "version": "1.0.0",
+  "description": "Website for Faultline 40k",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-css-image": "^0.4.1",
+    "gulp-load-plugins": "^1.5.0",
+    "lodash": "^4.17.11"
+  },
   "devDependencies": {
-    "apache-server-configs": "^2.14.0",
-    "babel-core": "^6.14.0",
-    "babel-preset-es2015": "^6.0.15",
-    "browser-sync": "^2.14.0",
-    "del": "^2.2.2",
-    "eslint-config-google": "^0.3.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-cache": "^0.4.5",
-    "gulp-concat": "^2.6.0",
-    "gulp-css-image": "^0.3.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-eslint": "^1.1.1",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-if": "^2.0.1",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-load-plugins": "^1.2.4",
-    "gulp-newer": "^1.2.0",
-    "gulp-replace": "^0.6.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-size": "^2.1.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.4",
-    "gulp-useref": "^3.1.0",
-    "psi": "^2.0.4",
-    "run-sequence": "^1.0.1",
-    "sw-precache": "^3.2.0",
-    "sw-toolbox": "^3.2.1"
-  }
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unillu/faultline.git"
+  },
+  "author": "Megan Prior-Pfeifer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unillu/faultline/issues"
+  },
+  "homepage": "https://github.com/Unillu/faultline#readme"
 }

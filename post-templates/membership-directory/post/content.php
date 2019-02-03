@@ -195,25 +195,25 @@ $facebook_profile = get_field('facebook_profile');
 				<?php
 					if ($question_1):
 					?>
-					<h2 class="member-question">Tell us about what got you interested in playing 40k/30k:</h2>
+					<h2 class="member-question">Where do you primarily do your gaming?</h2>
 					<p class="member-answer"><?php the_field('question_1'); ?></p>
 				<?php endif; ?>
 				<?php
 					if ($question_2):
 					?>
-					<h2 class="member-question">What is your best 40k/30k story?</h2>
+					<h2 class="member-question">Tell us about what got you interested in playing 40k/30k:</h2>
 					<p class="member-answer"><?php the_field('question_2'); ?></p>
 				<?php endif; ?>
 				<?php
 					if ($question_3):
 					?>
-					<h2 class="member-question">What is the worst 40k/30k experience you've had?</h2>
+					<h2 class="member-question">What is your best 40k/30k story?</h2>
 					<p class="member-answer"><?php the_field('question_3'); ?></p>
 				<?php endif; ?>
 				<?php
 					if ($question_4):
 					?>
-					<h2 class="member-question">What do you think makes for a great game of Warhammer?</h2>
+					<h2 class="member-question">What is the worst 40k/30k experience you've had?</h2>
 					<p class="member-answer"><?php the_field('question_4'); ?></p>
 				<?php endif; ?>
 				<?php

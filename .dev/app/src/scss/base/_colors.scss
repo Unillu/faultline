@@ -28,7 +28,7 @@ $purple:  #3B3158;
 $pink:    #91527C;
 $red:     #4C2116;
 $orange:  #A44032;
-$yellow:  #D48F4D;
+$yellow:  #EC8D32;
 $green:   #29442A;
 $teal:    #2C8C8A;
 $cyan:    #007E92;
@@ -36,7 +36,8 @@ $cyan:    #007E92;
 $main: (
 	primary: $purple,
 	secondary: $yellow,
-  dark: $black
+  dark: $black,
+  white: $white
 );
 
 @function palette($key) {
@@ -54,6 +55,14 @@ $main: (
         &.dark      { background-color: mix($color, black, 30%); }
         &.gradient	{ background: linear-gradient(90deg, mix($color, black, 50%), mix($color, black, 30%));}
       }
+    }
+  }
+}
+
+@each $name, $color in $main {
+  .font {
+    &-#{$name}{
+      color: $color;
     }
   }
 }
