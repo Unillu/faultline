@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2760px" height="852px" viewBox="0 0 2760 852" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="FL-|-Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-hero" fill="#3B3158">
+            <path d="M475.206362,1.20815167 L549.439545,435.809221 C719.915796,513.936407 996.40924,553 1378.91988,553 C1761.43051,553 2041.44218,513.936407 2218.95487,435.809221 L2284.39614,0.251489492 L2760,-2.27373675e-13 L2760,852 L0,852 L0,1.45943097 L475.206362,1.20815167 Z" id="home-hero-bottom-mask"></path>
+        </g>
+    </g>
+</svg>

@@ -284,6 +284,36 @@ $img-army-traitors__path: 'images/army-traitors_2x.png';
 $img-army-tyranids__width: 42px;
 $img-army-tyranids__height: 68px;
 $img-army-tyranids__path: 'images/army-tyranids_2x.png';
+@mixin img-home-hero-tau() {
+  width: 1700px;
+  height: 1700px;
+  background-image: url(images/home-hero-tau.png);
+  background-size: 1700px 1700px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1700px;
+    height: 1700px;
+    background-image: url(images/home-hero-tau_2x.png);
+    background-size: 1700px 1700px;
+  }
+}
+$img-home-hero-tau__width: 1700px;
+$img-home-hero-tau__height: 1700px;
+$img-home-hero-tau__path: 'images/home-hero-tau_2x.png';
+@mixin img-home-hero-tyranid() {
+  width: 1700px;
+  height: 1700px;
+  background-image: url(images/home-hero-tyranid.png);
+  background-size: 1700px 1700px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1700px;
+    height: 1700px;
+    background-image: url(images/home-hero-tyranid_2x.png);
+    background-size: 1700px 1700px;
+  }
+}
+$img-home-hero-tyranid__width: 1700px;
+$img-home-hero-tyranid__height: 1700px;
+$img-home-hero-tyranid__path: 'images/home-hero-tyranid_2x.png';
 @mixin img-logo() {
   width: 75px;
   height: 75px;
@@ -314,21 +344,51 @@ $img-logo__path: 'images/logo_2x.png';
 $img-maelstrom-cherry__width: 139px;
 $img-maelstrom-cherry__height: 81px;
 $img-maelstrom-cherry__path: 'images/maelstrom-cherry_2x.png';
+@mixin img-maelstrom-dice() {
+  width: 81px;
+  height: 80px;
+  background-image: url(images/maelstrom-dice.png);
+  background-size: 81px 80px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 81px;
+    height: 80px;
+    background-image: url(images/maelstrom-dice_2x.png);
+    background-size: 81px 80px;
+  }
+}
+$img-maelstrom-dice__width: 81px;
+$img-maelstrom-dice__height: 80px;
+$img-maelstrom-dice__path: 'images/maelstrom-dice_2x.png';
 @mixin img-maelstrom-hero-banner-lg() {
+  width: 1016px;
+  height: 407px;
+  background-image: url(images/maelstrom-hero-banner-lg.png);
+  background-size: 1016px 407px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 1016px;
+    height: 407px;
+    background-image: url(images/maelstrom-hero-banner-lg_2x.png);
+    background-size: 1016px 407px;
+  }
+}
+$img-maelstrom-hero-banner-lg__width: 1016px;
+$img-maelstrom-hero-banner-lg__height: 407px;
+$img-maelstrom-hero-banner-lg__path: 'images/maelstrom-hero-banner-lg_2x.png';
+@mixin img-maelstrom-hero-banner-sm() {
   width: 300px;
   height: 308px;
-  background-image: url(images/maelstrom-hero-banner-lg.png);
+  background-image: url(images/maelstrom-hero-banner-sm.png);
   background-size: 300px 308px;
   @media screen and (min-resolution: 2dppx) {
     width: 300px;
     height: 308px;
-    background-image: url(images/maelstrom-hero-banner-lg_2x.png);
+    background-image: url(images/maelstrom-hero-banner-sm_2x.png);
     background-size: 300px 308px;
   }
 }
-$img-maelstrom-hero-banner-lg__width: 300px;
-$img-maelstrom-hero-banner-lg__height: 308px;
-$img-maelstrom-hero-banner-lg__path: 'images/maelstrom-hero-banner-lg_2x.png';
+$img-maelstrom-hero-banner-sm__width: 300px;
+$img-maelstrom-hero-banner-sm__height: 308px;
+$img-maelstrom-hero-banner-sm__path: 'images/maelstrom-hero-banner-sm_2x.png';
 @mixin img-maelstrom-image-bar-lg() {
   width: 1200px;
   height: 598px;
@@ -479,21 +539,6 @@ $img-maelstrom-logo-alt__path: 'images/maelstrom-logo-alt_2x.png';
 $img-maelstrom-skull__width: 67px;
 $img-maelstrom-skull__height: 80px;
 $img-maelstrom-skull__path: 'images/maelstrom-skull_2x.png';
-@mixin img-maesltrom-dice() {
-  width: 81px;
-  height: 80px;
-  background-image: url(images/maesltrom-dice.png);
-  background-size: 81px 80px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 81px;
-    height: 80px;
-    background-image: url(images/maesltrom-dice_2x.png);
-    background-size: 81px 80px;
-  }
-}
-$img-maesltrom-dice__width: 81px;
-$img-maesltrom-dice__height: 80px;
-$img-maesltrom-dice__path: 'images/maesltrom-dice_2x.png';
 @mixin img-marker-large-orange() {
   width: 41px;
   height: 62px;
@@ -689,51 +734,6 @@ $img-footer-md__path: 'images/footer-md_2x.jpg';
 $img-footer-sm__width: 767px;
 $img-footer-sm__height: 444px;
 $img-footer-sm__path: 'images/footer-sm_2x.jpg';
-@mixin img-home-hero-lg() {
-  width: 2136px;
-  height: 632px;
-  background-image: url(images/home-hero-lg.jpg);
-  background-size: 2136px 632px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 2136px;
-    height: 632px;
-    background-image: url(images/home-hero-lg_2x.jpg);
-    background-size: 2136px 632px;
-  }
-}
-$img-home-hero-lg__width: 2136px;
-$img-home-hero-lg__height: 632px;
-$img-home-hero-lg__path: 'images/home-hero-lg_2x.jpg';
-@mixin img-home-hero-md() {
-  width: 992px;
-  height: 632px;
-  background-image: url(images/home-hero-md.jpg);
-  background-size: 992px 632px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 992px;
-    height: 632px;
-    background-image: url(images/home-hero-md_2x.jpg);
-    background-size: 992px 632px;
-  }
-}
-$img-home-hero-md__width: 992px;
-$img-home-hero-md__height: 632px;
-$img-home-hero-md__path: 'images/home-hero-md_2x.jpg';
-@mixin img-home-hero-sm() {
-  width: 767px;
-  height: 632px;
-  background-image: url(images/home-hero-sm.jpg);
-  background-size: 767px 632px;
-  @media screen and (min-resolution: 2dppx) {
-    width: 767px;
-    height: 632px;
-    background-image: url(images/home-hero-sm_2x.jpg);
-    background-size: 767px 632px;
-  }
-}
-$img-home-hero-sm__width: 767px;
-$img-home-hero-sm__height: 632px;
-$img-home-hero-sm__path: 'images/home-hero-sm_2x.jpg';
 @mixin img-membership-check() {
   width: 1200px;
   height: 1118px;

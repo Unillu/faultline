@@ -28,7 +28,7 @@ gulp.task('cssimage', function(){
 // Minify images
 gulp.task('images', function() {
   return gulp.src('app/images/**/*.+(png|jpg)')
-    .pipe(cache(imagemin()))
+    // .pipe(cache(imagemin()))
     .pipe(gulp.dest('../images'))
 });
 
@@ -64,10 +64,11 @@ gulp.task('watch', function(){
       port: 8890,
       proxy: 'http://localhost:8888',
       reloadOnRestart: true,
+      browser: 'google chrome'
     })
 
-  gulp.watch('app/images/*.+(png|jpg)', gulp.series('cssimage'))
-  gulp.watch(['app/src/scss/**/*.scss', 'app/src/style.scss'], gulp.series('sass')).on("change", browserSync.reload)
+  gulp.watch('app/images/*.+(png|jpg)', gulp.series(['cssimage', 'images']))
+  gulp.watch(['app/src/scss/**/*.scss', 'app/src/style.scss'], gulp.series('sass')).on('change', browserSync.reload)
 })
 
 // Builds production

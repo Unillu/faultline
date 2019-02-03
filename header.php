@@ -2,6 +2,15 @@
 <html lang="">
 
 <head>
+	<?php if( !current_user_can('administrator') ) {  ?>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-T83DZSH');</script>
+		<!-- End Google Tag Manager -->
+	<?php } ?>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
@@ -16,7 +25,7 @@
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Web Starter Kit">
-	<link rel="icon" sizes="192x192" href="<?php echo esc_url( home_url( '/' ) ); ?>images/touch/chrome-touch-icon-192x192.png">
+	<link rel="icon" sizes="192x192" href="<?php echo get_bloginfo('template_directory'); ?>/images/touch/chrome-touch-icon-192x192.png">
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -56,6 +65,12 @@
 ?>
 
 <body>
+	<?php if( !current_user_can('administrator') ) {  ?>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T83DZSH"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+	<?php } ?>
 
 	<?php if (is_front_page() && is_home()) { ?>
 	<main class="home">

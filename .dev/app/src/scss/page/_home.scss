@@ -1,28 +1,126 @@
 .home {
-
 	text-align: center;
+	overflow: hidden;
 
 	h2 {
 		text-align: center;
 	}
 
 	.hero-container {
-		background-color: palette('dark');
+		min-height: 450px;
+		padding-bottom: 70px;
+		overflow: hidden;
+		background: linear-gradient(to bottom, darken(palette(primary), 10%), palette(secondary));
 
-		@extend %background-image;
+		&:after {
+			background: rgba(darken(palette(primary), 10%), .3);
+			z-index: 10;
 
-		@include img-home-hero-sm;
+			@include breakpoint-min(md) {
+				height: 360px;
+				background-color: transparent;
+				background: -webkit-linear-gradient(to bottom, darken(palette(primary), 10%), rgba(darken(palette(primary), 10%), 0));
+				background: linear-gradient(to bottom, darken(palette(primary), 10%), rgba(darken(palette(primary), 10%), 0));
+			}
+		}
 
 		@include breakpoint-min(md) {
-			@include img-home-hero-md;
+			height: 852px;
+			background: url('images/home-hero-parallax-3.svg') repeat center;
 		}
+	}
 
-		@include breakpoint-min(lg) {
-			@include img-home-hero-lg;
-		}
+	.hero-headline {
+		z-index: 100;
 	}
 
 	.title {
 		margin-bottom: 48px;
 	}
+
+	.fighter {
+		width: 850px;
+		height: 850px;
+	}
+
+	.fighter-baddie {
+		left: -425px !important;
+		margin-left: 25%;
+
+		@include breakpoint-max(sm) {
+			left: 0 !important;
+		}
+	}
+
+	.fighter-goodie {
+		left: -425px !important;
+		margin-left: 75%;
+
+		@include breakpoint-max(sm) {
+			left: 635px !important;
+		}
+	}
+
 }
+
+.home-parallax {
+	margin-left: 50%;
+	position: absolute;
+	top: 0;
+	left: -879px;
+	z-index: -1;
+}
+
+.home-hero-sun,
+.home-hero-bottom-mask,
+.home-hero-parallax-1,
+.home-hero-parallax-2 {
+	@include breakpoint-max(sm) {
+		display: none !important;
+	}
+}
+
+.home-hero-bottom-mask {
+	width: 2760px;
+	height: 852px;
+	margin-left: 50%;
+	background-image: url('images/home-hero-bottom-mask.svg');
+	background-size: 2760px 852px;
+	position: absolute;
+	left: -1380px;
+	top: 0;
+
+	@include breakpoint-max(sm) {
+		display: none !important;
+	}
+}
+
+.home-hero-parallax-1 {
+	width: 1181px;
+	height: 583px;
+	margin-left: 50%;
+	margin-top: -100px;
+	background-image: url('images/home-hero-parallax-1.svg');
+	background-size: 1181px 583px;
+	left: -590px !important;
+}
+
+.home-hero-parallax-2 {
+	width: 1758px;
+	height: 654px;
+	margin-left: 50%;
+	margin-top: -130px;
+	background-image: url('images/home-hero-parallax-2.svg');
+	background-size: 1758px 654px;
+	left: -879px !important;
+}
+
+.home-hero-sun {
+	width: 141px;
+	height: 141px;
+	margin-left: 850px;
+	margin-top: 170px;
+	background-image: url('images/home-hero-sun.svg');
+	background-size: 141px 141px;
+}
+

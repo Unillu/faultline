@@ -34,7 +34,7 @@
 		text-transform: uppercase;
 		font-weight: normal;
 	} @else {
-		@warn 'The options are sans-serif or headline'
+		@warn 'The options are sans-serif or headline';
 	}
 }
 
@@ -170,6 +170,14 @@ blockquote {
 	display: block;
 }
 
+.strong {
+	font-weight: bold;
+}
+
+.link {
+	text-decoration: underline;
+}
+
 .sans {
   @include font(sans-serif);
 }
@@ -187,9 +195,3 @@ blockquote {
 	text-align: center;
 	padding: 32px;
 }
-
-
-
-
-
-
