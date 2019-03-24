@@ -75,8 +75,7 @@
 }
 
 .maelstrom-banner-section,
-.maelstrom-next-section,
-.maelstrom-important-section {
+.maelstrom-next-section {
 	width: 110%;
 	padding: 0;
 	margin-top: 0;
@@ -154,77 +153,117 @@
 	@include font(headline);
 }
 
+.maelstrom-sponsor-section {
+	.title {
+		text-shadow: none;
+
+		@include breakpoint-max(sm) {
+			font-size: 40px;
+		}
+	}
+
+	.sponsors {
+		text-align: center;
+	}
+
+	.sponsor {
+		display: inline-block;
+		vertical-align: middle;
+		margin: $gutter;
+
+		@include breakpoint-min(md) {
+			margin: $gutter*2;
+		}
+	}
+
+	.sponsor-game-kastle {
+		@include img-maelstrom-sponsor-gamekastle-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-gamekastle-lg;
+
+			max-width: 774px;
+			width: 100% !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.sponsor-tablewar {
+		@include img-maelstrom-sponsor-tablewar-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-tablewar-lg;
+		}
+	}
+
+	.sponsor-turbo-dork {
+		@include img-maelstrom-sponsor-turbo-dork-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-turbo-dork-lg;
+		}
+	}
+
+	.sponsor-hammerhead {
+		@include img-maelstrom-sponsor-hammerhead-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-hammerhead-lg;
+		}
+	}
+
+	.sponsor-secret-weapon {
+		@include img-maelstrom-sponsor-secret-weapon-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-secret-weapon-lg;
+		}
+	}
+
+	.sponsor-m3-studios {
+		@include img-maelstrom-sponsor-m3-studio-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-m3-studio-lg;
+		}
+	}
+}
+
+.maelstrom-sponsor-header {
+	border-top: 4px solid rgba(palette(primary), .5);
+	padding-top: $gutter*5;
+
+	@include breakpoint-min(md) {
+		padding-top: $gutter*10;
+		margin: 0 8.3333333%;
+	}
+}
+
+
 .maelstrom-banner {
 	@include img-maelstrom-image-bar-sm;
 
 	@include breakpoint-min(md) {
-		height: 850px !important;
+		height: 500px !important;
 		background-size: cover;
+		background-attachment: fixed;
 
 		@include img-maelstrom-image-bar-lg;
 	}
+
+	width: 100% !important;
+	background-size: cover !important;
+	background-position: center;
 }
 
-.maelstrom-next-header,
-.maelstrom-important-header {
+.maelstrom-next-header {
 	margin-bottom: 40px;
 	color: palette(secondary);
 	text-transform: none;
 	font-weight: 600;
 
 	@include font(sans-serif);
-}
-
-.maelstrom-banner {
-	width: 100% !important;
-	background-size: cover !important;
-	background-position: center;
-}
-
-.maelstrom-important-1,
-.maelstrom-important-2,
-.maelstrom-important-3 {
-	height: auto !important;
-	padding: 40px 16px;
-	margin-bottom: 4px;
-
-	@extend .maelstrom-banner;
-}
-
-.maelstrom-important-header {
-	text-align: center;
-	margin: 0 auto 40px;
-}
-
-.maelstrom-number {
-	font-size: 48px;
-	text-align: center;
-	color: palette(white);
-	display: block;
-}
-
-.maelstrom-important-1 {
-	@include img-maelstrom-important-1-sm;
-
-	@include breakpoint-min(md) {
-		@include img-maelstrom-important-1-lg;
-	}
-}
-
-.maelstrom-important-2 {
-	@include img-maelstrom-important-2-sm;
-
-	@include breakpoint-min(md) {
-		@include img-maelstrom-important-2-lg;
-	}
-}
-
-.maelstrom-important-3 {
-	@include img-maelstrom-important-3-sm;
-
-	@include breakpoint-min(md) {
-		@include img-maelstrom-important-3-lg;
-	}
 }
 
 .maelstrom-event-home-section {
@@ -246,6 +285,55 @@
 	@include breakpoint-min(md) {
 		font-size: 48px;
 	}
+}
+
+.maelstrom-day {
+	text-align: center;
+}
+
+.maelstrom-event-info {
+	background-color: $black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: $gutter*2;
+	margin: 0 $gutter $gutter*2;
+	color: $white;
+	position: relative;
+
+	.name {
+		text-align: center;
+		padding: 30px 0;
+		font-size: 24px;
+	}
+
+	.strong {
+		color: $yellow;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.maelstrom-friday-1 {
+	background-image: url('images/maelstrom-event-day-1_2x.png');
+}
+
+.maelstrom-saturday-1 {
+	background-image: url('images/maelstrom-event-day-2_2x.png');
+}
+
+.maelstrom-saturday-2 {
+	background-image: url('images/maelstrom-event-day-3_2x.png');
+}
+
+.maelstrom-sunday-1 {
+	background-image: url('images/maelstrom-event-day-4_2x.png');
+}
+
+.maelstrom-sunday-2 {
+	background-image: url('images/maelstrom-event-day-5_2x.png');
 }
 
 

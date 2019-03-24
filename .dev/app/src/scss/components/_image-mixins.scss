@@ -284,6 +284,21 @@ $img-army-traitors__path: 'images/army-traitors_2x.png';
 $img-army-tyranids__width: 42px;
 $img-army-tyranids__height: 68px;
 $img-army-tyranids__path: 'images/army-tyranids_2x.png';
+@mixin img-event-day-1() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/event-day-1.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/event-day-1_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-event-day-1__width: 468px;
+$img-event-day-1__height: 481px;
+$img-event-day-1__path: 'images/event-day-1_2x.png';
 @mixin img-home-hero-tau() {
   width: 1700px;
   height: 1700px;
@@ -359,6 +374,81 @@ $img-maelstrom-cherry__path: 'images/maelstrom-cherry_2x.png';
 $img-maelstrom-dice__width: 81px;
 $img-maelstrom-dice__height: 80px;
 $img-maelstrom-dice__path: 'images/maelstrom-dice_2x.png';
+@mixin img-maelstrom-event-day-1() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-1.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-1_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-1__width: 468px;
+$img-maelstrom-event-day-1__height: 481px;
+$img-maelstrom-event-day-1__path: 'images/maelstrom-event-day-1_2x.png';
+@mixin img-maelstrom-event-day-2() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-2.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-2_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-2__width: 468px;
+$img-maelstrom-event-day-2__height: 481px;
+$img-maelstrom-event-day-2__path: 'images/maelstrom-event-day-2_2x.png';
+@mixin img-maelstrom-event-day-3() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-3.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-3_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-3__width: 468px;
+$img-maelstrom-event-day-3__height: 481px;
+$img-maelstrom-event-day-3__path: 'images/maelstrom-event-day-3_2x.png';
+@mixin img-maelstrom-event-day-4() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-4.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-4_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-4__width: 468px;
+$img-maelstrom-event-day-4__height: 481px;
+$img-maelstrom-event-day-4__path: 'images/maelstrom-event-day-4_2x.png';
+@mixin img-maelstrom-event-day-5() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-5.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-5_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-5__width: 468px;
+$img-maelstrom-event-day-5__height: 481px;
+$img-maelstrom-event-day-5__path: 'images/maelstrom-event-day-5_2x.png';
 @mixin img-maelstrom-hero-banner-lg() {
   width: 1016px;
   height: 407px;
