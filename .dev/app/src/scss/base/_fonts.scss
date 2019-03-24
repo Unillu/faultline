@@ -187,6 +187,10 @@ blockquote {
   @include font(headline);
 }
 
+.no-wrap {
+	white-space: nowrap;
+}
+
 blockquote {
 	@include font(headline);
 	position: relative;

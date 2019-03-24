@@ -144,6 +144,16 @@
 	}
 }
 
+.maelstrom-date {
+	display: block;
+	background: palette(secondary);
+	color: $white;
+	font-size: 36px;
+	text-align: center;
+	line-height: 1.25;
+	@include font(headline);
+}
+
 .maelstrom-banner {
 	@include img-maelstrom-image-bar-sm;
 
