@@ -1,5 +1,7 @@
+/*
+General updates to the Maelstrom Mixer Event page
+*/
 .maelstrom-mixer-june-2019 {
-
 	p {
 		font-size: 24px;
 
@@ -74,25 +76,6 @@
 	}
 }
 
-.maelstrom-banner-section,
-.maelstrom-next-section {
-	width: 110%;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: -16px;
-	margin-right: -16px;
-
-	@include breakpoint-min(md) {
-		width: 100%;
-		margin: 0;
-	}
-}
-
-.maelstrom-next-section {
-	padding: 0 16px 80px;
-}
-
 .maelstrom-hero {
 	display: block;
 	margin: 0 auto 30px;
@@ -106,6 +89,34 @@
 	}
 }
 
+/*
+Description
+*/
+.maelstrom-logo-alt {
+	@include breakpoint-min(md) {
+		width: 100% !important;
+		height: 100% !important;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+
+		@include img-maelstrom-logo-alt;
+	}
+}
+
+.maelstrom-date {
+	display: block;
+	background: palette(secondary);
+	color: $white;
+	font-size: 36px;
+	text-align: center;
+	line-height: 1.25;
+	margin: 40px 0 20px;
+	@include font(headline);
+}
+
+/*
+Ticket Callout
+*/
 .maelstrom-ticket-callout {
 	background: palette(secondary);
 	padding: $gutter*4;
@@ -132,27 +143,101 @@
 	padding: $gutter;
 }
 
-.maelstrom-logo-alt {
-	@include breakpoint-min(md) {
-		width: 100% !important;
-		height: 100% !important;
-		background-size: contain !important;
-		background-repeat: no-repeat;
+/*
+Sections with full backgrounds
+*/
+.maelstrom-banner-section,
+.maelstrom-next-section,
+.maelstrom-swag-section {
+	width: 110%;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: -16px;
+	margin-right: -16px;
 
-		@include img-maelstrom-logo-alt;
+	@include breakpoint-min(md) {
+		width: 100%;
+		margin: 0;
 	}
 }
 
-.maelstrom-date {
-	display: block;
-	background: palette(secondary);
-	color: $white;
-	font-size: 36px;
-	text-align: center;
-	line-height: 1.25;
-	@include font(headline);
+.maelstrom-next-header, .maelstrom-swag-header {
+	margin-bottom: 40px;
+	text-transform: none;
+	font-weight: 600;
+
+	@include font(sans-serif);
 }
 
+/*
+Image banner
+*/
+.maelstrom-banner {
+	@include img-maelstrom-image-bar-sm;
+
+	@include breakpoint-min(md) {
+		height: 500px !important;
+		background-size: cover;
+		background-attachment: fixed;
+
+		@include img-maelstrom-image-bar-lg;
+	}
+
+	width: 100% !important;
+	background-size: cover !important;
+	background-position: center;
+}
+
+/*
+Next
+*/
+.maelstrom-next-section {
+	padding: 0 16px 80px;
+}
+
+.maelstrom-next-header {
+	color: palette(secondary);
+}
+
+/*
+Swag
+*/
+.maelstrom-swag-section {
+	padding: 0 16px 300px;
+
+	@include breakpoint-min(md) {
+		padding: 0;
+	}
+}
+
+.maelstrom-swag-header {
+	color: palette(primary);
+}
+
+.maelstrom-swag-section {
+	background: $yellow;
+	overflow: hidden;
+	position: relative;
+
+	.link, p {
+		color: palette(primary);
+	}
+}
+
+.maelstrom-swag {
+	@include img-maelstrom-swag;
+	position: absolute;
+
+	@include breakpoint-max(sm){
+		left: 50%;
+		margin-left: -292px;
+	}
+}
+
+/*
+Sponsors
+*/
 .maelstrom-sponsor-section {
 	.title {
 		text-shadow: none;
@@ -240,32 +325,9 @@
 	}
 }
 
-
-.maelstrom-banner {
-	@include img-maelstrom-image-bar-sm;
-
-	@include breakpoint-min(md) {
-		height: 500px !important;
-		background-size: cover;
-		background-attachment: fixed;
-
-		@include img-maelstrom-image-bar-lg;
-	}
-
-	width: 100% !important;
-	background-size: cover !important;
-	background-position: center;
-}
-
-.maelstrom-next-header {
-	margin-bottom: 40px;
-	color: palette(secondary);
-	text-transform: none;
-	font-weight: 600;
-
-	@include font(sans-serif);
-}
-
+/*
+Events
+*/
 .maelstrom-event-home-section {
 	padding: 80px 0;
 
@@ -335,5 +397,3 @@
 .maelstrom-sunday-2 {
 	background-image: url('images/maelstrom-event-day-5_2x.png');
 }
-
-

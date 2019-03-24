@@ -809,6 +809,21 @@ $img-maelstrom-sponsor-turbo-dork-lg__path: 'images/maelstrom-sponsor-turbo-dork
 $img-maelstrom-sponsor-turbo-dork-sm__width: 84px;
 $img-maelstrom-sponsor-turbo-dork-sm__height: 90px;
 $img-maelstrom-sponsor-turbo-dork-sm__path: 'images/maelstrom-sponsor-turbo-dork-sm_2x.png';
+@mixin img-maelstrom-swag() {
+  width: 544px;
+  height: 403px;
+  background-image: url(images/maelstrom-swag.png);
+  background-size: 544px 403px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 544px;
+    height: 403px;
+    background-image: url(images/maelstrom-swag_2x.png);
+    background-size: 544px 403px;
+  }
+}
+$img-maelstrom-swag__width: 544px;
+$img-maelstrom-swag__height: 403px;
+$img-maelstrom-swag__path: 'images/maelstrom-swag_2x.png';
 @mixin img-marker-large-orange() {
   width: 41px;
   height: 62px;
