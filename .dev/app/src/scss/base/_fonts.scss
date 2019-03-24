@@ -180,6 +180,7 @@ blockquote {
 
 .sans {
   @include font(sans-serif);
+  text-transform: none;
 }
 
 .headline {
