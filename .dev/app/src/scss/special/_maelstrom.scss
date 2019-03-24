@@ -16,6 +16,7 @@
 		background-color: palette(primary);
 		background-image: none !important;
 		padding-top: 80px;
+		padding-bottom: 0;
 
 		&:after {
 			display: none;
@@ -24,6 +25,12 @@
 
 	.hero-headline {
 		width: 100%;
+
+		@include breakpoint-min(md) {
+			margin-left: 0;
+		    max-width: 100%;
+			flex-basis: 100%;
+		}
 	}
 
 	.page-post-title {
@@ -89,13 +96,41 @@
 
 .maelstrom-hero {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 30px;
+	position: relative;
+	z-index: 10;
 
 	@include img-maelstrom-hero-banner-sm;
 
 	@include breakpoint-min(md) {
 		@include img-maelstrom-hero-banner-lg;
 	}
+}
+
+.maelstrom-ticket-callout {
+	background: palette(secondary);
+	padding: $gutter*4;
+	margin-right: -$gutter*2;
+	margin-left: -$gutter*2;
+	position: relative;
+	z-index: 0;
+
+	.button {
+		display: inline-block;
+	}
+
+	.link {
+		color: $white;
+	}
+
+	@include breakpoint-min(md) {
+		margin: 50px 0 0;
+	}
+}
+
+.maelstrom-button-row {
+	text-align: center;
+	padding: $gutter;
 }
 
 .maelstrom-logo-alt {
@@ -113,7 +148,7 @@
 	@include img-maelstrom-image-bar-sm;
 
 	@include breakpoint-min(md) {
-		height: 390px !important;
+		height: 850px !important;
 		background-size: cover;
 
 		@include img-maelstrom-image-bar-lg;
