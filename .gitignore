@@ -24,5 +24,5 @@ wp-content/plugins/hello.php
 style.css
 style.css.map
 
-images/
-fonts/
+/images/
+/fonts/
