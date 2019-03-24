@@ -207,7 +207,7 @@ Swag
 	padding: 0 16px 300px;
 
 	@include breakpoint-min(md) {
-		padding: 0;
+		padding: 0 16px 80px;
 	}
 }
 
@@ -228,6 +228,7 @@ Swag
 .maelstrom-swag {
 	@include img-maelstrom-swag;
 	position: absolute;
+	margin-left: 50px;
 
 	@include breakpoint-max(sm){
 		left: 50%;
