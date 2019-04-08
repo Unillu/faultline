@@ -449,6 +449,21 @@ $img-maelstrom-event-day-4__path: 'images/maelstrom-event-day-4_2x.png';
 $img-maelstrom-event-day-5__width: 468px;
 $img-maelstrom-event-day-5__height: 481px;
 $img-maelstrom-event-day-5__path: 'images/maelstrom-event-day-5_2x.png';
+@mixin img-maelstrom-event-day-6() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-6.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-6_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-6__width: 468px;
+$img-maelstrom-event-day-6__height: 481px;
+$img-maelstrom-event-day-6__path: 'images/maelstrom-event-day-6_2x.png';
 @mixin img-maelstrom-hero-banner-lg() {
   width: 1016px;
   height: 407px;
