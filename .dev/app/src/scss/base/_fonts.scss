@@ -180,10 +180,15 @@ blockquote {
 
 .sans {
   @include font(sans-serif);
+  text-transform: none;
 }
 
 .headline {
   @include font(headline);
+}
+
+.no-wrap {
+	white-space: nowrap;
 }
 
 blockquote {

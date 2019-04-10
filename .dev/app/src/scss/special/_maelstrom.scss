@@ -1,5 +1,7 @@
+/*
+General updates to the Maelstrom Mixer Event page
+*/
 .maelstrom-mixer-june-2019 {
-
 	p {
 		font-size: 24px;
 
@@ -16,6 +18,8 @@
 		background-color: palette(primary);
 		background-image: none !important;
 		padding-top: 80px;
+		padding-bottom: 0;
+		overflow-x: hidden;
 
 		&:after {
 			display: none;
@@ -24,6 +28,12 @@
 
 	.hero-headline {
 		width: 100%;
+
+		@include breakpoint-min(md) {
+			margin-left: 0;
+		    max-width: 100%;
+			flex-basis: 100%;
+		}
 	}
 
 	.page-post-title {
@@ -67,9 +77,79 @@
 	}
 }
 
+.maelstrom-hero {
+	display: block;
+	margin: 0 auto 30px;
+	position: relative;
+	z-index: 10;
+
+	@include img-maelstrom-hero-banner-sm;
+
+	@include breakpoint-min(md) {
+		@include img-maelstrom-hero-banner-lg;
+	}
+}
+
+/*
+Description
+*/
+.maelstrom-logo-alt {
+	@include breakpoint-min(md) {
+		width: 100% !important;
+		height: 100% !important;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+
+		@include img-maelstrom-logo-alt;
+	}
+}
+
+.maelstrom-date {
+	display: block;
+	background: palette(secondary);
+	color: $white;
+	font-size: 32px;
+	text-align: center;
+	line-height: 1.25;
+	margin: 40px 0 20px;
+	@include font(headline);
+}
+
+/*
+Ticket Callout
+*/
+.maelstrom-ticket-callout {
+	background: palette(secondary);
+	padding: $gutter*4;
+	margin-right: -$gutter*2;
+	margin-left: -$gutter*2;
+	position: relative;
+	z-index: 0;
+
+	.button {
+		display: inline-block;
+	}
+
+	.link {
+		color: $white;
+	}
+
+	@include breakpoint-min(md) {
+		margin: 50px 0 0;
+	}
+}
+
+.maelstrom-button-row {
+	text-align: center;
+	padding: $gutter;
+}
+
+/*
+Sections with full backgrounds
+*/
 .maelstrom-banner-section,
 .maelstrom-next-section,
-.maelstrom-important-section {
+.maelstrom-swag-section {
 	width: 110%;
 	padding: 0;
 	margin-top: 0;
@@ -83,105 +163,173 @@
 	}
 }
 
-.maelstrom-next-section {
-	padding: 0 16px 80px;
-}
-
-.maelstrom-hero {
-	display: block;
-	margin: 0 auto;
-
-	@include img-maelstrom-hero-banner-sm;
-
-	@include breakpoint-min(md) {
-		@include img-maelstrom-hero-banner-lg;
-	}
-}
-
-.maelstrom-logo-alt {
-	@include breakpoint-min(md) {
-		width: 100% !important;
-		height: 100% !important;
-		background-size: contain !important;
-		background-repeat: no-repeat;
-
-		@include img-maelstrom-logo-alt;
-	}
-}
-
-.maelstrom-banner {
-	@include img-maelstrom-image-bar-sm;
-
-	@include breakpoint-min(md) {
-		height: 390px !important;
-		background-size: cover;
-
-		@include img-maelstrom-image-bar-lg;
-	}
-}
-
-.maelstrom-next-header,
-.maelstrom-important-header {
+.maelstrom-next-header, .maelstrom-swag-header {
 	margin-bottom: 40px;
-	color: palette(secondary);
 	text-transform: none;
 	font-weight: 600;
 
 	@include font(sans-serif);
 }
 
+/*
+Image banner
+*/
 .maelstrom-banner {
+	@include img-maelstrom-image-bar-sm;
+
+	@include breakpoint-min(md) {
+		height: 500px !important;
+		background-size: cover;
+		background-attachment: fixed;
+
+		@include img-maelstrom-image-bar-lg;
+	}
+
 	width: 100% !important;
 	background-size: cover !important;
 	background-position: center;
 }
 
-.maelstrom-important-1,
-.maelstrom-important-2,
-.maelstrom-important-3 {
-	height: auto !important;
-	padding: 40px 16px;
-	margin-bottom: 4px;
-
-	@extend .maelstrom-banner;
+/*
+Next
+*/
+.maelstrom-next-section {
+	padding: 0 16px 80px;
 }
 
-.maelstrom-important-header {
-	text-align: center;
-	margin: 0 auto 40px;
+.maelstrom-next-header {
+	color: palette(secondary);
 }
 
-.maelstrom-number {
-	font-size: 48px;
-	text-align: center;
-	color: palette(white);
-	display: block;
-}
-
-.maelstrom-important-1 {
-	@include img-maelstrom-important-1-sm;
+/*
+Swag
+*/
+.maelstrom-swag-section {
+	padding: 0 16px 300px;
 
 	@include breakpoint-min(md) {
-		@include img-maelstrom-important-1-lg;
+		padding: 0 16px 80px;
 	}
 }
 
-.maelstrom-important-2 {
-	@include img-maelstrom-important-2-sm;
+.maelstrom-swag-header {
+	color: palette(primary);
+}
 
-	@include breakpoint-min(md) {
-		@include img-maelstrom-important-2-lg;
+.maelstrom-swag-section {
+	background: $yellow;
+	overflow: hidden;
+	position: relative;
+
+	.link, p {
+		color: palette(primary);
 	}
 }
 
-.maelstrom-important-3 {
-	@include img-maelstrom-important-3-sm;
+.maelstrom-swag {
+	@include img-maelstrom-swag;
+	position: absolute;
+	margin-left: 50px;
 
-	@include breakpoint-min(md) {
-		@include img-maelstrom-important-3-lg;
+	@include breakpoint-max(sm){
+		left: 50%;
+		margin-left: -292px;
 	}
 }
 
+/*
+Sponsors
+*/
+.maelstrom-sponsor-section {
+	.title {
+		text-shadow: none;
+
+		@include breakpoint-max(sm) {
+			font-size: 40px;
+		}
+	}
+
+	.sponsors {
+		text-align: center;
+	}
+
+	.sponsor {
+		display: inline-block;
+		vertical-align: middle;
+		margin: $gutter;
+
+		@include breakpoint-min(md) {
+			margin: $gutter*2;
+		}
+	}
+
+	.sponsor-game-kastle {
+		@include img-maelstrom-sponsor-gamekastle-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-gamekastle-lg;
+
+			max-width: 774px;
+			width: 100% !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.sponsor-tablewar {
+		@include img-maelstrom-sponsor-tablewar-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-tablewar-lg;
+		}
+	}
+
+	.sponsor-turbo-dork {
+		@include img-maelstrom-sponsor-turbo-dork-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-turbo-dork-lg;
+		}
+	}
+
+	.sponsor-hammerhead {
+		@include img-maelstrom-sponsor-hammerhead-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-hammerhead-lg;
+		}
+	}
+
+	.sponsor-secret-weapon {
+		@include img-maelstrom-sponsor-secret-weapon-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-secret-weapon-lg;
+		}
+	}
+
+	.sponsor-m3-studios {
+		@include img-maelstrom-sponsor-m3-studio-sm;
+
+		@include breakpoint-min(md) {
+			@include img-maelstrom-sponsor-m3-studio-lg;
+		}
+	}
+}
+
+.maelstrom-sponsor-header {
+	border-top: 4px solid rgba(palette(primary), .5);
+	padding-top: $gutter*5;
+
+	@include breakpoint-min(md) {
+		padding-top: $gutter*10;
+		margin: 0 8.3333333%;
+	}
+}
+
+/*
+Events
+*/
 .maelstrom-event-home-section {
 	padding: 80px 0;
 
@@ -203,4 +351,55 @@
 	}
 }
 
+.maelstrom-day {
+	text-align: center;
+}
 
+.maelstrom-event-info {
+	background-color: $black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: $gutter*2;
+	margin: 0 $gutter $gutter*2;
+	color: $white;
+	position: relative;
+
+	.name {
+		text-align: center;
+		padding: 30px 0;
+		font-size: 24px;
+	}
+
+	.strong {
+		color: $yellow;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.maelstrom-friday-1 {
+	background-image: url('images/maelstrom-event-day-1_2x.png');
+}
+
+.maelstrom-saturday-1 {
+	background-image: url('images/maelstrom-event-day-2_2x.png');
+}
+
+.maelstrom-saturday-2 {
+	background-image: url('images/maelstrom-event-day-3_2x.png');
+}
+
+.maelstrom-sunday-1 {
+	background-image: url('images/maelstrom-event-day-4_2x.png');
+}
+
+.maelstrom-sunday-2 {
+	background-image: url('images/maelstrom-event-day-5_2x.png');
+}
+
+.maelstrom-sunday-3 {
+	background-image: url('images/maelstrom-event-day-6_2x.png');
+}

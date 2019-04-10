@@ -284,6 +284,21 @@ $img-army-traitors__path: 'images/army-traitors_2x.png';
 $img-army-tyranids__width: 42px;
 $img-army-tyranids__height: 68px;
 $img-army-tyranids__path: 'images/army-tyranids_2x.png';
+@mixin img-event-day-1() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/event-day-1.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/event-day-1_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-event-day-1__width: 468px;
+$img-event-day-1__height: 481px;
+$img-event-day-1__path: 'images/event-day-1_2x.png';
 @mixin img-home-hero-tau() {
   width: 1700px;
   height: 1700px;
@@ -359,6 +374,96 @@ $img-maelstrom-cherry__path: 'images/maelstrom-cherry_2x.png';
 $img-maelstrom-dice__width: 81px;
 $img-maelstrom-dice__height: 80px;
 $img-maelstrom-dice__path: 'images/maelstrom-dice_2x.png';
+@mixin img-maelstrom-event-day-1() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-1.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-1_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-1__width: 468px;
+$img-maelstrom-event-day-1__height: 481px;
+$img-maelstrom-event-day-1__path: 'images/maelstrom-event-day-1_2x.png';
+@mixin img-maelstrom-event-day-2() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-2.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-2_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-2__width: 468px;
+$img-maelstrom-event-day-2__height: 481px;
+$img-maelstrom-event-day-2__path: 'images/maelstrom-event-day-2_2x.png';
+@mixin img-maelstrom-event-day-3() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-3.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-3_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-3__width: 468px;
+$img-maelstrom-event-day-3__height: 481px;
+$img-maelstrom-event-day-3__path: 'images/maelstrom-event-day-3_2x.png';
+@mixin img-maelstrom-event-day-4() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-4.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-4_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-4__width: 468px;
+$img-maelstrom-event-day-4__height: 481px;
+$img-maelstrom-event-day-4__path: 'images/maelstrom-event-day-4_2x.png';
+@mixin img-maelstrom-event-day-5() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-5.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-5_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-5__width: 468px;
+$img-maelstrom-event-day-5__height: 481px;
+$img-maelstrom-event-day-5__path: 'images/maelstrom-event-day-5_2x.png';
+@mixin img-maelstrom-event-day-6() {
+  width: 468px;
+  height: 481px;
+  background-image: url(images/maelstrom-event-day-6.png);
+  background-size: 468px 481px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 468px;
+    height: 481px;
+    background-image: url(images/maelstrom-event-day-6_2x.png);
+    background-size: 468px 481px;
+  }
+}
+$img-maelstrom-event-day-6__width: 468px;
+$img-maelstrom-event-day-6__height: 481px;
+$img-maelstrom-event-day-6__path: 'images/maelstrom-event-day-6_2x.png';
 @mixin img-maelstrom-hero-banner-lg() {
   width: 1016px;
   height: 407px;
@@ -391,33 +496,33 @@ $img-maelstrom-hero-banner-sm__height: 308px;
 $img-maelstrom-hero-banner-sm__path: 'images/maelstrom-hero-banner-sm_2x.png';
 @mixin img-maelstrom-image-bar-lg() {
   width: 1200px;
-  height: 598px;
+  height: 853px;
   background-image: url(images/maelstrom-image-bar-lg.png);
-  background-size: 1200px 598px;
+  background-size: 1200px 853px;
   @media screen and (min-resolution: 2dppx) {
     width: 1200px;
-    height: 598px;
+    height: 853px;
     background-image: url(images/maelstrom-image-bar-lg_2x.png);
-    background-size: 1200px 598px;
+    background-size: 1200px 853px;
   }
 }
 $img-maelstrom-image-bar-lg__width: 1200px;
-$img-maelstrom-image-bar-lg__height: 598px;
+$img-maelstrom-image-bar-lg__height: 853px;
 $img-maelstrom-image-bar-lg__path: 'images/maelstrom-image-bar-lg_2x.png';
 @mixin img-maelstrom-image-bar-sm() {
   width: 320px;
-  height: 293px;
+  height: 228px;
   background-image: url(images/maelstrom-image-bar-sm.png);
-  background-size: 320px 293px;
+  background-size: 320px 228px;
   @media screen and (min-resolution: 2dppx) {
     width: 320px;
-    height: 293px;
+    height: 228px;
     background-image: url(images/maelstrom-image-bar-sm_2x.png);
-    background-size: 320px 293px;
+    background-size: 320px 228px;
   }
 }
 $img-maelstrom-image-bar-sm__width: 320px;
-$img-maelstrom-image-bar-sm__height: 293px;
+$img-maelstrom-image-bar-sm__height: 228px;
 $img-maelstrom-image-bar-sm__path: 'images/maelstrom-image-bar-sm_2x.png';
 @mixin img-maelstrom-important-1-lg() {
   width: 1200px;
@@ -539,6 +644,201 @@ $img-maelstrom-logo-alt__path: 'images/maelstrom-logo-alt_2x.png';
 $img-maelstrom-skull__width: 67px;
 $img-maelstrom-skull__height: 80px;
 $img-maelstrom-skull__path: 'images/maelstrom-skull_2x.png';
+@mixin img-maelstrom-sponsor-gamekastle-lg() {
+  width: 774px;
+  height: 156px;
+  background-image: url(images/maelstrom-sponsor-gamekastle-lg.png);
+  background-size: 774px 156px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 774px;
+    height: 156px;
+    background-image: url(images/maelstrom-sponsor-gamekastle-lg_2x.png);
+    background-size: 774px 156px;
+  }
+}
+$img-maelstrom-sponsor-gamekastle-lg__width: 774px;
+$img-maelstrom-sponsor-gamekastle-lg__height: 156px;
+$img-maelstrom-sponsor-gamekastle-lg__path: 'images/maelstrom-sponsor-gamekastle-lg_2x.png';
+@mixin img-maelstrom-sponsor-gamekastle-sm() {
+  width: 285px;
+  height: 58px;
+  background-image: url(images/maelstrom-sponsor-gamekastle-sm.png);
+  background-size: 285px 58px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 285px;
+    height: 58px;
+    background-image: url(images/maelstrom-sponsor-gamekastle-sm_2x.png);
+    background-size: 285px 58px;
+  }
+}
+$img-maelstrom-sponsor-gamekastle-sm__width: 285px;
+$img-maelstrom-sponsor-gamekastle-sm__height: 58px;
+$img-maelstrom-sponsor-gamekastle-sm__path: 'images/maelstrom-sponsor-gamekastle-sm_2x.png';
+@mixin img-maelstrom-sponsor-hammerhead-lg() {
+  width: 162px;
+  height: 177px;
+  background-image: url(images/maelstrom-sponsor-hammerhead-lg.png);
+  background-size: 162px 177px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 162px;
+    height: 177px;
+    background-image: url(images/maelstrom-sponsor-hammerhead-lg_2x.png);
+    background-size: 162px 177px;
+  }
+}
+$img-maelstrom-sponsor-hammerhead-lg__width: 162px;
+$img-maelstrom-sponsor-hammerhead-lg__height: 177px;
+$img-maelstrom-sponsor-hammerhead-lg__path: 'images/maelstrom-sponsor-hammerhead-lg_2x.png';
+@mixin img-maelstrom-sponsor-hammerhead-sm() {
+  width: 51px;
+  height: 58px;
+  background-image: url(images/maelstrom-sponsor-hammerhead-sm.png);
+  background-size: 51px 58px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 51px;
+    height: 58px;
+    background-image: url(images/maelstrom-sponsor-hammerhead-sm_2x.png);
+    background-size: 51px 58px;
+  }
+}
+$img-maelstrom-sponsor-hammerhead-sm__width: 51px;
+$img-maelstrom-sponsor-hammerhead-sm__height: 58px;
+$img-maelstrom-sponsor-hammerhead-sm__path: 'images/maelstrom-sponsor-hammerhead-sm_2x.png';
+@mixin img-maelstrom-sponsor-m3-studio-lg() {
+  width: 154px;
+  height: 177px;
+  background-image: url(images/maelstrom-sponsor-m3-studio-lg.png);
+  background-size: 154px 177px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 154px;
+    height: 177px;
+    background-image: url(images/maelstrom-sponsor-m3-studio-lg_2x.png);
+    background-size: 154px 177px;
+  }
+}
+$img-maelstrom-sponsor-m3-studio-lg__width: 154px;
+$img-maelstrom-sponsor-m3-studio-lg__height: 177px;
+$img-maelstrom-sponsor-m3-studio-lg__path: 'images/maelstrom-sponsor-m3-studio-lg_2x.png';
+@mixin img-maelstrom-sponsor-m3-studio-sm() {
+  width: 49px;
+  height: 58px;
+  background-image: url(images/maelstrom-sponsor-m3-studio-sm.png);
+  background-size: 49px 58px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 49px;
+    height: 58px;
+    background-image: url(images/maelstrom-sponsor-m3-studio-sm_2x.png);
+    background-size: 49px 58px;
+  }
+}
+$img-maelstrom-sponsor-m3-studio-sm__width: 49px;
+$img-maelstrom-sponsor-m3-studio-sm__height: 58px;
+$img-maelstrom-sponsor-m3-studio-sm__path: 'images/maelstrom-sponsor-m3-studio-sm_2x.png';
+@mixin img-maelstrom-sponsor-secret-weapon-lg() {
+  width: 485px;
+  height: 177px;
+  background-image: url(images/maelstrom-sponsor-secret-weapon-lg.png);
+  background-size: 485px 177px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 485px;
+    height: 177px;
+    background-image: url(images/maelstrom-sponsor-secret-weapon-lg_2x.png);
+    background-size: 485px 177px;
+  }
+}
+$img-maelstrom-sponsor-secret-weapon-lg__width: 485px;
+$img-maelstrom-sponsor-secret-weapon-lg__height: 177px;
+$img-maelstrom-sponsor-secret-weapon-lg__path: 'images/maelstrom-sponsor-secret-weapon-lg_2x.png';
+@mixin img-maelstrom-sponsor-secret-weapon-sm() {
+  width: 155px;
+  height: 58px;
+  background-image: url(images/maelstrom-sponsor-secret-weapon-sm.png);
+  background-size: 155px 58px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 155px;
+    height: 58px;
+    background-image: url(images/maelstrom-sponsor-secret-weapon-sm_2x.png);
+    background-size: 155px 58px;
+  }
+}
+$img-maelstrom-sponsor-secret-weapon-sm__width: 155px;
+$img-maelstrom-sponsor-secret-weapon-sm__height: 58px;
+$img-maelstrom-sponsor-secret-weapon-sm__path: 'images/maelstrom-sponsor-secret-weapon-sm_2x.png';
+@mixin img-maelstrom-sponsor-tablewar-lg() {
+  width: 187px;
+  height: 248px;
+  background-image: url(images/maelstrom-sponsor-tablewar-lg.png);
+  background-size: 187px 248px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 187px;
+    height: 248px;
+    background-image: url(images/maelstrom-sponsor-tablewar-lg_2x.png);
+    background-size: 187px 248px;
+  }
+}
+$img-maelstrom-sponsor-tablewar-lg__width: 187px;
+$img-maelstrom-sponsor-tablewar-lg__height: 248px;
+$img-maelstrom-sponsor-tablewar-lg__path: 'images/maelstrom-sponsor-tablewar-lg_2x.png';
+@mixin img-maelstrom-sponsor-tablewar-sm() {
+  width: 68px;
+  height: 90px;
+  background-image: url(images/maelstrom-sponsor-tablewar-sm.png);
+  background-size: 68px 90px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 68px;
+    height: 90px;
+    background-image: url(images/maelstrom-sponsor-tablewar-sm_2x.png);
+    background-size: 68px 90px;
+  }
+}
+$img-maelstrom-sponsor-tablewar-sm__width: 68px;
+$img-maelstrom-sponsor-tablewar-sm__height: 90px;
+$img-maelstrom-sponsor-tablewar-sm__path: 'images/maelstrom-sponsor-tablewar-sm_2x.png';
+@mixin img-maelstrom-sponsor-turbo-dork-lg() {
+  width: 260px;
+  height: 248px;
+  background-image: url(images/maelstrom-sponsor-turbo-dork-lg.png);
+  background-size: 260px 248px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 260px;
+    height: 248px;
+    background-image: url(images/maelstrom-sponsor-turbo-dork-lg_2x.png);
+    background-size: 260px 248px;
+  }
+}
+$img-maelstrom-sponsor-turbo-dork-lg__width: 260px;
+$img-maelstrom-sponsor-turbo-dork-lg__height: 248px;
+$img-maelstrom-sponsor-turbo-dork-lg__path: 'images/maelstrom-sponsor-turbo-dork-lg_2x.png';
+@mixin img-maelstrom-sponsor-turbo-dork-sm() {
+  width: 84px;
+  height: 90px;
+  background-image: url(images/maelstrom-sponsor-turbo-dork-sm.png);
+  background-size: 84px 90px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 84px;
+    height: 90px;
+    background-image: url(images/maelstrom-sponsor-turbo-dork-sm_2x.png);
+    background-size: 84px 90px;
+  }
+}
+$img-maelstrom-sponsor-turbo-dork-sm__width: 84px;
+$img-maelstrom-sponsor-turbo-dork-sm__height: 90px;
+$img-maelstrom-sponsor-turbo-dork-sm__path: 'images/maelstrom-sponsor-turbo-dork-sm_2x.png';
+@mixin img-maelstrom-swag() {
+  width: 544px;
+  height: 403px;
+  background-image: url(images/maelstrom-swag.png);
+  background-size: 544px 403px;
+  @media screen and (min-resolution: 2dppx) {
+    width: 544px;
+    height: 403px;
+    background-image: url(images/maelstrom-swag_2x.png);
+    background-size: 544px 403px;
+  }
+}
+$img-maelstrom-swag__width: 544px;
+$img-maelstrom-swag__height: 403px;
+$img-maelstrom-swag__path: 'images/maelstrom-swag_2x.png';
 @mixin img-marker-large-orange() {
   width: 41px;
   height: 62px;

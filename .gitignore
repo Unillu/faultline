@@ -23,3 +23,6 @@ wp-content/plugins/hello.php
 .DS_Store
 style.css
 style.css.map
+
+/images/
+/fonts/
